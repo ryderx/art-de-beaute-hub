@@ -1,9 +1,11 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
   
   return (
     <footer className="bg-beauty-lightpink pt-16 pb-8">
@@ -14,54 +16,53 @@ const Footer = () => {
               Art de la <span className="text-beauty-gold">Beautée</span>
             </h3>
             <p className="text-gray-600 mb-4">
-              A distinguished beauty institute based in Orléans, France, dedicated to 
-              delivering top-tier beauty services and professional education.
+              {t('footer.description')}
             </p>
           </div>
 
           <div>
-            <h4 className="font-playfair text-xl text-beauty-darkpink mb-6">Quick Links</h4>
+            <h4 className="font-playfair text-xl text-beauty-darkpink mb-6">{t('footer.quickLinks')}</h4>
             <ul className="space-y-3">
               <li>
                 <Link to="/" className="text-gray-600 hover:text-beauty-gold transition-colors">
-                  Home
+                  {t('nav.home')}
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-600 hover:text-beauty-gold transition-colors">
-                  Services
+                  {t('nav.services')}
                 </Link>
               </li>
               <li>
                 <Link to="/academy" className="text-gray-600 hover:text-beauty-gold transition-colors">
-                  Academy
+                  {t('nav.academy')}
                 </Link>
               </li>
               <li>
                 <Link to="/gallery" className="text-gray-600 hover:text-beauty-gold transition-colors">
-                  Gallery
+                  {t('nav.gallery')}
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="text-gray-600 hover:text-beauty-gold transition-colors">
-                  About Us
+                  {t('nav.about')}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-playfair text-xl text-beauty-darkpink mb-6">Services</h4>
+            <h4 className="font-playfair text-xl text-beauty-darkpink mb-6">{t('services.title')}</h4>
             <ul className="space-y-3">
-              <li className="text-gray-600">Nail Services</li>
-              <li className="text-gray-600">Eyelash Extensions</li>
-              <li className="text-gray-600">Depilation</li>
-              <li className="text-gray-600">Professional Training</li>
+              <li className="text-gray-600">{t('services.nail.title')}</li>
+              <li className="text-gray-600">{t('services.lashes.title')}</li>
+              <li className="text-gray-600">{t('services.depilation.title')}</li>
+              <li className="text-gray-600">{t('services.training.title')}</li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-playfair text-xl text-beauty-darkpink mb-6">Contact Us</h4>
+            <h4 className="font-playfair text-xl text-beauty-darkpink mb-6">{t('contact.title')}</h4>
             <address className="not-italic text-gray-600 space-y-3">
               <p>66 Rue Porte Saint-Jean, 45000 Orléans, France</p>
               <p>Email: munozjulia1977@gmail.com</p>

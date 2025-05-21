@@ -35,11 +35,10 @@ const Index = () => {
       <section className="py-16 bg-beauty-darkpink text-white">
         <div className="beauty-container text-center">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-6">
-            Ready to Transform Your Look or Start Your Career?
+            {t('contact.bookAppointment')}
           </h2>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-            Book a beauty service or enroll in our professional training programs today.
-            Our expert team is waiting to help you achieve your beauty goals.
+            {t('contact.bookDescription')}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a

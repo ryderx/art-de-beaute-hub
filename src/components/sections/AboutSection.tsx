@@ -2,12 +2,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
+import { useLanguage } from "../../context/LanguageContext";
 
 const AboutSection = () => {
+  const { t } = useLanguage();
+  
   return (
     <section className="py-20 bg-white">
       <div className="beauty-container">
-        <h2 className="section-title">About Art de la Beautée</h2>
+        <h2 className="section-title">{t('about.title')}</h2>
         
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
@@ -23,15 +26,14 @@ const AboutSection = () => {
           
           <div className="lg:w-1/2">
             <h3 className="font-playfair text-3xl font-semibold mb-6 text-beauty-darkpink">
-              Our Mission
+              {t('about.mission.title')}
             </h3>
             <p className="text-gray-700 mb-6">
-              To enhance confidence and self-expression through expert beauty services 
-              while empowering individuals to build successful careers in the beauty industry.
+              {t('about.mission.description')}
             </p>
             
             <h3 className="font-playfair text-2xl font-semibold mb-4">
-              Why Choose Art de la Beautée?
+              {t('about.whyChoose')}
             </h3>
             
             <ul className="space-y-4 mb-8">
@@ -40,8 +42,7 @@ const AboutSection = () => {
                   <ChevronRight size={20} />
                 </span>
                 <span>
-                  <strong className="font-medium">Certified Expertise:</strong> Our team of professionals is 
-                  trained and certified to deliver both beauty services and high-level education.
+                  <strong className="font-medium">{t('about.reasons.expertise.title')}:</strong> {t('about.reasons.expertise.description')}
                 </span>
               </li>
               <li className="flex">
@@ -49,8 +50,7 @@ const AboutSection = () => {
                   <ChevronRight size={20} />
                 </span>
                 <span>
-                  <strong className="font-medium">Commitment to Quality:</strong> We use only the best products 
-                  and follow industry-leading standards.
+                  <strong className="font-medium">{t('about.reasons.quality.title')}:</strong> {t('about.reasons.quality.description')}
                 </span>
               </li>
               <li className="flex">
@@ -58,8 +58,7 @@ const AboutSection = () => {
                   <ChevronRight size={20} />
                 </span>
                 <span>
-                  <strong className="font-medium">Empowerment Through Education:</strong> We believe in lifting 
-                  others through knowledge, offering real-world skills for a lasting career.
+                  <strong className="font-medium">{t('about.reasons.education.title')}:</strong> {t('about.reasons.education.description')}
                 </span>
               </li>
               <li className="flex">
@@ -67,14 +66,13 @@ const AboutSection = () => {
                   <ChevronRight size={20} />
                 </span>
                 <span>
-                  <strong className="font-medium">Client-Centered Experience:</strong> Every service is 
-                  customized to meet the unique needs and goals of our clients and students.
+                  <strong className="font-medium">{t('about.reasons.experience.title')}:</strong> {t('about.reasons.experience.description')}
                 </span>
               </li>
             </ul>
             
             <Link to="/about" className="beauty-button">
-              Learn More About Us
+              {t('learnMore')}
             </Link>
           </div>
         </div>

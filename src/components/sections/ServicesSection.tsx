@@ -3,30 +3,33 @@ import React from "react";
 import ServiceCard from "../ui/ServiceCard";
 import { Scissors, GraduationCap, Sparkles, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext";
 
 const ServicesSection = () => {
+  const { t } = useLanguage();
+
   const services = [
     {
-      title: "Nail Services",
-      description: "From classic manicures and pedicures to advanced nail art and extensions, our expert technicians provide precision and style.",
+      title: t('services.nail.title'),
+      description: t('services.nail.description'),
       icon: <Sparkles size={32} />,
       link: "/services#nail-services"
     },
     {
-      title: "Eyelash Extensions",
-      description: "Enhance your natural beauty with customized lash extension services that add volume, length, and definition to your eyes.",
+      title: t('services.lashes.title'),
+      description: t('services.lashes.description'),
       icon: <Eye size={32} />,
       link: "/services#eyelash-extensions"
     },
     {
-      title: "Depilation",
-      description: "Experience smooth, hair-free skin with our effective and gentle waxing and hair removal services, designed for all skin types.",
+      title: t('services.depilation.title'),
+      description: t('services.depilation.description'),
       icon: <Scissors size={32} />,
       link: "/services#depilation"
     },
     {
-      title: "Professional Training",
-      description: "Start or advance your career in beauty with our professional certification programs, featuring hands-on learning and expert instruction.",
+      title: t('services.training.title'),
+      description: t('services.training.description'),
       icon: <GraduationCap size={32} />,
       link: "/academy"
     }
@@ -35,7 +38,7 @@ const ServicesSection = () => {
   return (
     <section className="py-20 bg-beauty-lightpink">
       <div className="beauty-container">
-        <h2 className="section-title">Our Services</h2>
+        <h2 className="section-title">{t('services.title')}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {services.map((service, index) => (
@@ -56,7 +59,7 @@ const ServicesSection = () => {
             rel="noopener noreferrer"
             className="beauty-button"
           >
-            Book Now
+            {t('bookNow')}
           </a>
         </div>
       </div>

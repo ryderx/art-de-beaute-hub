@@ -2,11 +2,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Globe } from "lucide-react";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [language, setLanguage] = useState("fr");
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,19 +32,18 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  const changeLanguage = (lang: string) => {
+  const changeLanguage = (lang) => {
     setLanguage(lang);
     closeMenu();
-    // Language change functionality will be added with i18n integration
   };
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
-    { name: "Academy", path: "/academy" },
-    { name: "Gallery", path: "/gallery" },
-    { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: t('nav.home'), path: "/" },
+    { name: t('nav.services'), path: "/services" },
+    { name: t('nav.academy'), path: "/academy" },
+    { name: t('nav.gallery'), path: "/gallery" },
+    { name: t('nav.about'), path: "/about" },
+    { name: t('nav.contact'), path: "/contact" },
   ];
 
   return (
@@ -133,7 +133,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="beauty-button"
           >
-            Book Now
+            {t('nav.bookNow')}
           </a>
         </div>
 
@@ -180,7 +180,7 @@ const Navbar = () => {
               className="beauty-button mt-8"
               onClick={closeMenu}
             >
-              Book Now
+              {t('nav.bookNow')}
             </a>
           </div>
         </div>
