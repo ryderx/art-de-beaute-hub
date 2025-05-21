@@ -103,6 +103,13 @@ const translations = {
     'viewAll': 'Voir Tout',
     'enrollNow': 'S\'inscrire Maintenant',
     'learnMore': 'En Savoir Plus',
+    
+    // Business Hours (Updated)
+    'hours.schedule': 'Horaires',
+    'hours.time': 'Heures',
+    'hours.days': 'Jours',
+    'hours.day': 'Jour',
+    'hours.timeRange': '05:00 – 14:00'
   },
   
   es: {
@@ -193,6 +200,13 @@ const translations = {
     'viewAll': 'Ver Todo',
     'enrollNow': 'Inscribirse Ahora',
     'learnMore': 'Saber Más',
+    
+    // Business Hours (Updated)
+    'hours.schedule': 'Horario',
+    'hours.time': 'Horas',
+    'hours.days': 'Días',
+    'hours.day': 'Día',
+    'hours.timeRange': '05:00 – 14:00'
   },
   
   en: {
@@ -283,6 +297,13 @@ const translations = {
     'viewAll': 'View All',
     'enrollNow': 'Enroll Now',
     'learnMore': 'Learn More',
+    
+    // Business Hours (Updated)
+    'hours.schedule': 'Schedule',
+    'hours.time': 'Hours',
+    'hours.days': 'Days',
+    'hours.day': 'Day',
+    'hours.timeRange': '05:00 – 14:00'
   }
 };
 
