@@ -2,7 +2,6 @@
 import React from "react";
 import Layout from "../components/layout/Layout";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import BookingForm from "../components/ui/BookingForm";
 
 const Contact = () => {
   return (
@@ -37,8 +36,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-xl mb-2">Visit Us</h3>
                     <address className="not-italic text-gray-600">
-                      123 Beauty Avenue, Santo Domingo<br />
-                      Dominican Republic
+                      66 Rue Porte Saint-Jean<br />
+                      45000 Orléans, France
                     </address>
                   </div>
                 </div>
@@ -49,7 +48,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-xl mb-2">Call Us</h3>
-                    <p className="text-gray-600">+1 809 123 4567</p>
+                    <p className="text-gray-600">07.82.22.05.63</p>
                   </div>
                 </div>
                 
@@ -59,7 +58,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-xl mb-2">Email Us</h3>
-                    <p className="text-gray-600">info@artdelabeautee.com</p>
+                    <p className="text-gray-600">munozjulia1977@gmail.com</p>
                   </div>
                 </div>
                 
@@ -70,9 +69,13 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-xl mb-2">Business Hours</h3>
                     <div className="text-gray-600">
-                      <p><strong>Monday - Friday:</strong> 9:00 AM - 7:00 PM</p>
-                      <p><strong>Saturday:</strong> 10:00 AM - 5:00 PM</p>
-                      <p><strong>Sunday:</strong> Closed</p>
+                      <p><strong>Lundi:</strong> 05:00 – 14:00</p>
+                      <p><strong>Mardi:</strong> 05:00 – 14:00</p>
+                      <p><strong>Mercredi:</strong> 05:00 – 14:00</p>
+                      <p><strong>Jeudi:</strong> 05:00 – 14:00</p>
+                      <p><strong>Vendredi:</strong> 05:00 – 14:00</p>
+                      <p><strong>Samedi:</strong> 05:00 – 14:00</p>
+                      <p><strong>Dimanche:</strong> Fermé</p>
                     </div>
                   </div>
                 </div>
@@ -95,23 +98,26 @@ const Contact = () => {
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                   </a>
-                  <a 
-                    href="#" 
-                    className="bg-beauty-pink hover:bg-beauty-darkpink text-beauty-darkpink hover:text-white p-3 rounded-full transition-colors"
-                    aria-label="Twitter"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-                  </a>
                 </div>
               </div>
             </div>
             
             <div>
-              <div className="bg-white rounded-lg shadow-lg p-8">
+              <div className="bg-white rounded-lg shadow-lg p-8 text-center">
                 <h2 className="font-playfair text-2xl font-semibold mb-6 text-beauty-darkpink text-center">
                   Book an Appointment
                 </h2>
-                <BookingForm type="service" />
+                <p className="text-gray-700 mb-6">
+                  Ready to experience our services? Book your appointment online with our easy scheduling system.
+                </p>
+                <a 
+                  href="https://www.kalendes.com/site/artdelabeaute/reserve" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="beauty-button inline-block"
+                >
+                  Book Now
+                </a>
               </div>
             </div>
           </div>
@@ -125,7 +131,7 @@ const Contact = () => {
           <div className="rounded-lg overflow-hidden shadow-lg">
             <div className="aspect-w-16 aspect-h-9">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.04360353798!2d-69.93912081320047!3d18.47671883352199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f1107ea5ab%3A0xd6c587b82715c164!2sSanto%20Domingo%2C%20Dominican%20Republic!5e0!3m2!1sen!2sus!4v1621532103960!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2673.2225093347365!2d1.9039099764026876!3d47.90390397121231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e4e37b7f4b1d%3A0xe97f962856e18cb3!2s66%20Rue%20Porte%20Saint-Jean%2C%2045000%20Orl%C3%A9ans%2C%20France!5e0!3m2!1sen!2sus!4v1714500890872!5m2!1sen!2sus" 
                 width="100%" 
                 height="450" 
                 style={{ border: 0 }} 

@@ -1,11 +1,12 @@
 
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [language, setLanguage] = useState("fr");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +29,12 @@ const Navbar = () => {
 
   const closeMenu = () => {
     setIsOpen(false);
+  };
+
+  const changeLanguage = (lang: string) => {
+    setLanguage(lang);
+    closeMenu();
+    // Language change functionality will be added with i18n integration
   };
 
   const navLinks = [
@@ -55,16 +62,39 @@ const Navbar = () => {
         </Link>
 
         {/* Mobile menu button */}
-        <button
-          onClick={toggleMenu}
-          className="md:hidden text-beauty-darkpink hover:text-beauty-gold transition-colors"
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-4 md:hidden">
+          <div className="relative inline-block">
+            <button 
+              className="flex items-center text-beauty-darkpink hover:text-beauty-gold"
+              aria-label="Language"
+              onClick={(e) => {
+                e.stopPropagation();
+                const dropdown = document.getElementById("mobile-lang-dropdown");
+                if (dropdown) {
+                  dropdown.classList.toggle("hidden");
+                }
+              }}
+            >
+              <Globe size={20} />
+              <span className="ml-1 uppercase">{language}</span>
+            </button>
+            <div id="mobile-lang-dropdown" className="hidden absolute right-0 mt-2 w-24 bg-white shadow-lg rounded-md z-50">
+              <button onClick={() => changeLanguage("fr")} className="block w-full text-left px-4 py-2 text-sm hover:bg-beauty-pink">Français</button>
+              <button onClick={() => changeLanguage("es")} className="block w-full text-left px-4 py-2 text-sm hover:bg-beauty-pink">Español</button>
+              <button onClick={() => changeLanguage("en")} className="block w-full text-left px-4 py-2 text-sm hover:bg-beauty-pink">English</button>
+            </div>
+          </div>
+          <button
+            onClick={toggleMenu}
+            className="text-beauty-darkpink hover:text-beauty-gold transition-colors"
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-6 items-center">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -74,6 +104,37 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
+          
+          <div className="relative inline-block">
+            <button 
+              className="flex items-center text-beauty-darkpink hover:text-beauty-gold"
+              aria-label="Language"
+              onClick={(e) => {
+                e.stopPropagation();
+                const dropdown = document.getElementById("lang-dropdown");
+                if (dropdown) {
+                  dropdown.classList.toggle("hidden");
+                }
+              }}
+            >
+              <Globe size={20} />
+              <span className="ml-1 uppercase">{language}</span>
+            </button>
+            <div id="lang-dropdown" className="hidden absolute right-0 mt-2 w-24 bg-white shadow-lg rounded-md z-50">
+              <button onClick={() => changeLanguage("fr")} className="block w-full text-left px-4 py-2 text-sm hover:bg-beauty-pink">Français</button>
+              <button onClick={() => changeLanguage("es")} className="block w-full text-left px-4 py-2 text-sm hover:bg-beauty-pink">Español</button>
+              <button onClick={() => changeLanguage("en")} className="block w-full text-left px-4 py-2 text-sm hover:bg-beauty-pink">English</button>
+            </div>
+          </div>
+          
+          <a
+            href="https://www.kalendes.com/site/artdelabeaute/reserve"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="beauty-button"
+          >
+            Book Now
+          </a>
         </div>
 
         {/* Mobile Navigation */}
@@ -105,13 +166,22 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/contact"
+            
+            <div className="flex space-x-4">
+              <button onClick={() => changeLanguage("fr")} className={`px-3 py-1 rounded ${language === "fr" ? "bg-beauty-pink" : "bg-gray-100"}`}>FR</button>
+              <button onClick={() => changeLanguage("es")} className={`px-3 py-1 rounded ${language === "es" ? "bg-beauty-pink" : "bg-gray-100"}`}>ES</button>
+              <button onClick={() => changeLanguage("en")} className={`px-3 py-1 rounded ${language === "en" ? "bg-beauty-pink" : "bg-gray-100"}`}>EN</button>
+            </div>
+            
+            <a
+              href="https://www.kalendes.com/site/artdelabeaute/reserve"
+              target="_blank"
+              rel="noopener noreferrer"
               className="beauty-button mt-8"
               onClick={closeMenu}
             >
               Book Now
-            </Link>
+            </a>
           </div>
         </div>
       </div>

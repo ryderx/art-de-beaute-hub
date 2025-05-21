@@ -2,10 +2,11 @@
 import React from "react";
 import Layout from "../components/layout/Layout";
 import { GraduationCap, Award, Clock, CheckCircle, Users, Calendar } from "lucide-react";
-import BookingForm from "../components/ui/BookingForm";
-import TestimonialCard from "../components/ui/TestimonialCard";
+import { useLanguage } from "../context/LanguageContext";
 
 const Academy = () => {
+  const { t } = useLanguage();
+  
   const programs = [
     {
       id: "nail-technician",
@@ -63,38 +64,16 @@ const Academy = () => {
     }
   ];
 
-  const testimonials = [
-    {
-      name: "Carmen Diaz",
-      role: "Nail Technician Graduate",
-      quote: "The training program gave me all the skills I needed to start my own successful nail business. The instructors were knowledgeable and supportive throughout my journey.",
-      image: "https://randomuser.me/api/portraits/women/65.jpg",
-    },
-    {
-      name: "Luisa Hernandez",
-      role: "Beauty Specialist Graduate",
-      quote: "Learning at Art de la Beautée was transformative. The comprehensive curriculum and hands-on practice prepared me fully for a career in the beauty industry.",
-      image: "https://randomuser.me/api/portraits/women/17.jpg",
-    },
-    {
-      name: "Isabella Martinez",
-      role: "Eyelash Artist Graduate",
-      quote: "I'm so grateful for the eyelash extension program. The small class sizes and personalized attention helped me perfect my technique. Now I have my own loyal clientele!",
-      image: "https://randomuser.me/api/portraits/women/32.jpg",
-    }
-  ];
-
   return (
     <Layout>
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-beauty-gradient">
         <div className="beauty-container text-center">
           <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-6">
-            Beauty Academy
+            {t('academy.title')}
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
-            Start or advance your career in the beauty industry with our professional 
-            certification programs. Learn from experienced instructors in a hands-on environment.
+            {t('academy.subtitle')}
           </p>
         </div>
       </section>
@@ -201,8 +180,13 @@ const Academy = () => {
                     ))}
                   </ul>
                   
-                  <a href="#enroll" className="beauty-button">
-                    Enroll Now
+                  <a 
+                    href="https://www.kalendes.com/site/artdelabeaute/reserve"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="beauty-button"
+                  >
+                    {t('enrollNow')}
                   </a>
                 </div>
               </div>
@@ -211,34 +195,22 @@ const Academy = () => {
         </div>
       </section>
 
-      {/* Student Testimonials */}
-      <section className="py-16">
-        <div className="beauty-container">
-          <h2 className="section-title">Student Testimonials</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard
-                key={index}
-                name={testimonial.name}
-                role={testimonial.role}
-                quote={testimonial.quote}
-                image={testimonial.image}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Enrollment Form */}
+      {/* Enrollment Section */}
       <section id="enroll" className="py-16 bg-beauty-lightpink">
-        <div className="beauty-container">
-          <h2 className="section-title">Enroll in a Program</h2>
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <BookingForm type="training" />
-            </div>
-          </div>
+        <div className="beauty-container text-center">
+          <h2 className="section-title">Ready to Begin Your Beauty Career?</h2>
+          <p className="text-lg mb-8 max-w-2xl mx-auto">
+            Take the first step towards your future in the beauty industry. 
+            Book a consultation to learn more about our programs and start your enrollment process.
+          </p>
+          <a 
+            href="https://www.kalendes.com/site/artdelabeaute/reserve"
+            target="_blank"
+            rel="noopener noreferrer" 
+            className="beauty-button inline-block"
+          >
+            {t('enrollNow')}
+          </a>
         </div>
       </section>
     </Layout>

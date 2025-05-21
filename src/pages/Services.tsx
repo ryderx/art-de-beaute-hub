@@ -1,10 +1,12 @@
+
 import React from "react";
 import Layout from "../components/layout/Layout";
 import { Scissors, Sparkles, Eye } from "lucide-react";
-import { Link } from "react-router-dom";
-import BookingForm from "../components/ui/BookingForm";
+import { useLanguage } from "../context/LanguageContext";
 
 const Services = () => {
+  const { t } = useLanguage();
+  
   const services = [
     {
       id: "nail-services",
@@ -15,28 +17,23 @@ const Services = () => {
       treatments: [
         {
           name: "Classic Manicure",
-          description: "Nail shaping, cuticle care, hand massage, and polish application",
-          price: "$25"
+          description: "Nail shaping, cuticle care, hand massage, and polish application"
         },
         {
           name: "Deluxe Pedicure",
-          description: "Foot soak, exfoliation, nail care, massage, and polish",
-          price: "$35"
+          description: "Foot soak, exfoliation, nail care, massage, and polish"
         },
         {
           name: "Gel Polish Application",
-          description: "Long-lasting gel polish with perfect shine and durability",
-          price: "$30"
+          description: "Long-lasting gel polish with perfect shine and durability"
         },
         {
           name: "Nail Extensions",
-          description: "Acrylic or gel extensions with custom length and shape",
-          price: "$45+"
+          description: "Acrylic or gel extensions with custom length and shape"
         },
         {
           name: "Nail Art Design",
-          description: "Custom art, stones, stickers, or hand-painted designs",
-          price: "$10-$30"
+          description: "Custom art, stones, stickers, or hand-painted designs"
         }
       ]
     },
@@ -49,28 +46,23 @@ const Services = () => {
       treatments: [
         {
           name: "Classic Lashes",
-          description: "1:1 application for a natural, enhanced look",
-          price: "$80"
+          description: "1:1 application for a natural, enhanced look"
         },
         {
           name: "Volume Lashes",
-          description: "Multiple extensions per natural lash for added fullness",
-          price: "$120"
+          description: "Multiple extensions per natural lash for added fullness"
         },
         {
           name: "Hybrid Lashes",
-          description: "Combination of classic and volume techniques",
-          price: "$100"
+          description: "Combination of classic and volume techniques"
         },
         {
           name: "Lash Lift & Tint",
-          description: "Semi-permanent curl and color for natural lashes",
-          price: "$65"
+          description: "Semi-permanent curl and color for natural lashes"
         },
         {
           name: "Lash Maintenance",
-          description: "Fill-in service for maintaining lash extensions",
-          price: "$45-$65"
+          description: "Fill-in service for maintaining lash extensions"
         }
       ]
     },
@@ -83,28 +75,23 @@ const Services = () => {
       treatments: [
         {
           name: "Eyebrow Waxing",
-          description: "Reshape and define your brows",
-          price: "$15"
+          description: "Reshape and define your brows"
         },
         {
           name: "Lip & Chin Waxing",
-          description: "Quick and effective facial hair removal",
-          price: "$12"
+          description: "Quick and effective facial hair removal"
         },
         {
           name: "Half Leg Waxing",
-          description: "From ankle to knee or knee to thigh",
-          price: "$30"
+          description: "From ankle to knee or knee to thigh"
         },
         {
           name: "Full Leg Waxing",
-          description: "Complete leg hair removal",
-          price: "$50"
+          description: "Complete leg hair removal"
         },
         {
           name: "Brazilian Waxing",
-          description: "Full bikini area hair removal",
-          price: "$45"
+          description: "Full bikini area hair removal"
         }
       ]
     }
@@ -116,7 +103,7 @@ const Services = () => {
       <section className="relative pt-32 pb-16 bg-beauty-gradient">
         <div className="beauty-container text-center">
           <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-6">
-            Our Beauty Services
+            {t('services.title')}
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
             Discover our professional beauty services designed to enhance your natural beauty
@@ -158,23 +145,27 @@ const Services = () => {
                   <p className="text-gray-700 mb-8">{service.description}</p>
                   
                   <h3 className="font-playfair text-xl font-semibold mb-4">
-                    Treatments & Pricing
+                    Treatments
                   </h3>
                   <div className="space-y-4 mb-8">
                     {service.treatments.map((treatment, i) => (
-                      <div key={i} className="flex justify-between items-start pb-2 border-b border-dashed border-beauty-pink">
+                      <div key={i} className="pb-2 border-b border-dashed border-beauty-pink">
                         <div>
                           <h4 className="font-medium">{treatment.name}</h4>
                           <p className="text-sm text-gray-600">{treatment.description}</p>
                         </div>
-                        <span className="font-semibold text-beauty-darkpink">{treatment.price}</span>
                       </div>
                     ))}
                   </div>
                   
-                  <Link to="/contact" className="beauty-button">
-                    Book This Service
-                  </Link>
+                  <a 
+                    href="https://www.kalendes.com/site/artdelabeaute/reserve"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="beauty-button"
+                  >
+                    {t('bookNow')}
+                  </a>
                 </div>
               </div>
             </div>
@@ -182,15 +173,21 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Booking Form */}
+      {/* Booking CTA */}
       <section className="py-16 bg-beauty-lightpink">
-        <div className="beauty-container">
-          <h2 className="section-title">Book Your Appointment</h2>
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <BookingForm type="service" />
-            </div>
-          </div>
+        <div className="beauty-container text-center">
+          <h2 className="section-title">Ready to Experience Our Services?</h2>
+          <p className="text-lg mb-8 max-w-2xl mx-auto">
+            Book your appointment today and let our expert team take care of all your beauty needs.
+          </p>
+          <a 
+            href="https://www.kalendes.com/site/artdelabeaute/reserve"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="beauty-button inline-block"
+          >
+            {t('bookNow')}
+          </a>
         </div>
       </section>
     </Layout>

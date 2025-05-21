@@ -50,9 +50,14 @@ const ServicesSection = () => {
         </div>
         
         <div className="text-center">
-          <Link to="/services" className="beauty-button">
-            View All Services
-          </Link>
+          <a 
+            href="https://www.kalendes.com/site/artdelabeaute/reserve" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="beauty-button"
+          >
+            Book Now
+          </a>
         </div>
       </div>
     </section>
