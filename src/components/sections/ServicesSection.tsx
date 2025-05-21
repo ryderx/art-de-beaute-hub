@@ -1,7 +1,7 @@
 
 import React from "react";
 import ServiceCard from "../ui/ServiceCard";
-import { NailPolish, Scissors, GraduationCap } from "lucide-react";
+import { Scissors, GraduationCap, Sparkles, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
@@ -9,13 +9,13 @@ const ServicesSection = () => {
     {
       title: "Nail Services",
       description: "From classic manicures and pedicures to advanced nail art and extensions, our expert technicians provide precision and style.",
-      icon: <NailPolish size={32} />,
+      icon: <Sparkles size={32} />,
       link: "/services#nail-services"
     },
     {
       title: "Eyelash Extensions",
       description: "Enhance your natural beauty with customized lash extension services that add volume, length, and definition to your eyes.",
-      icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>,
+      icon: <Eye size={32} />,
       link: "/services#eyelash-extensions"
     },
     {

@@ -1,7 +1,6 @@
-
 import React from "react";
 import Layout from "../components/layout/Layout";
-import { NailPolish, Scissors } from "lucide-react";
+import { Scissors, Sparkles, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
 import BookingForm from "../components/ui/BookingForm";
 
@@ -12,7 +11,7 @@ const Services = () => {
       title: "Nail Services",
       description: "From classic manicures and pedicures to advanced nail art and extensions, our expert technicians provide precision and style tailored to each client's personality and preferences.",
       image: "https://images.unsplash.com/photo-1604902396830-aca29e19b067?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      icon: <NailPolish size={32} />,
+      icon: <Sparkles size={32} />,
       treatments: [
         {
           name: "Classic Manicure",
@@ -46,7 +45,7 @@ const Services = () => {
       title: "Eyelash Extensions",
       description: "Enhance your natural beauty with customized lash extension services that add volume, length, and definition to your eyes.",
       image: "https://images.unsplash.com/photo-1562625964-ffe11143e6fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>,
+      icon: <Eye size={32} />,
       treatments: [
         {
           name: "Classic Lashes",
