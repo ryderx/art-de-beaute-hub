@@ -246,7 +246,7 @@ const translations = {
     'about.values.empowerment.title': 'Empowerment',
     'about.values.empowerment.description': 'We believe in lifting others through knowledge and confidence-building services.',
     'about.cta.title': 'Experience the Art de la Beautée Difference',
-    'about.cta.description': 'Whether you're looking for premium beauty services or starting a career in the beauty industry, we invite you to connect with us and discover the difference that expertise, quality, and personalized attention can make.',
+    'about.cta.description': 'Whether you\'re looking for premium beauty services or starting a career in the beauty industry, we invite you to connect with us and discover the difference that expertise, quality, and personalized attention can make.',
     'about.cta.services': 'Explore Our Services',
     'about.cta.contact': 'Contact Us',
     
