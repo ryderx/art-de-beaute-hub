@@ -2,19 +2,21 @@
 import React from "react";
 import Layout from "../components/layout/Layout";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 const Contact = () => {
+  const { t } = useLanguage();
+
   return (
     <Layout>
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-beauty-gradient">
         <div className="beauty-container text-center">
           <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-6">
-            Contact Us
+            {t('contact.title')}
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
-            We'd love to hear from you! Whether you want to book a service, inquire about our academy, 
-            or simply have a question, our team is here to help.
+            {t('contact.subtitle')}
           </p>
         </div>
       </section>
@@ -25,7 +27,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h2 className="font-playfair text-3xl font-semibold mb-8 text-beauty-darkpink">
-                Get In Touch
+                {t('contact.getInTouch')}
               </h2>
 
               <div className="space-y-8">
@@ -34,7 +36,7 @@ const Contact = () => {
                     <MapPin size={24} className="text-beauty-darkpink" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2">Visit Us</h3>
+                    <h3 className="font-semibold text-xl mb-2">{t('contact.location')}</h3>
                     <address className="not-italic text-gray-600">
                       66 Rue Porte Saint-Jean<br />
                       45000 Orléans, France
@@ -47,7 +49,7 @@ const Contact = () => {
                     <Phone size={24} className="text-beauty-darkpink" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2">Call Us</h3>
+                    <h3 className="font-semibold text-xl mb-2">{t('contact.phone')}</h3>
                     <p className="text-gray-600">07.82.22.05.63</p>
                   </div>
                 </div>
@@ -57,7 +59,7 @@ const Contact = () => {
                     <Mail size={24} className="text-beauty-darkpink" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2">Email Us</h3>
+                    <h3 className="font-semibold text-xl mb-2">{t('contact.email')}</h3>
                     <p className="text-gray-600">munozjulia1977@gmail.com</p>
                   </div>
                 </div>
@@ -67,22 +69,22 @@ const Contact = () => {
                     <Clock size={24} className="text-beauty-darkpink" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl mb-2">Business Hours</h3>
+                    <h3 className="font-semibold text-xl mb-2">{t('contact.hours')}</h3>
                     <div className="text-gray-600">
-                      <p><strong>Lundi:</strong> 05:00 – 14:00</p>
-                      <p><strong>Mardi:</strong> 05:00 – 14:00</p>
-                      <p><strong>Mercredi:</strong> 05:00 – 14:00</p>
-                      <p><strong>Jeudi:</strong> 05:00 – 14:00</p>
-                      <p><strong>Vendredi:</strong> 05:00 – 14:00</p>
-                      <p><strong>Samedi:</strong> 05:00 – 14:00</p>
-                      <p><strong>Dimanche:</strong> Fermé</p>
+                      <p><strong>{t('hours.monday')}:</strong> {t('hours.timeRange')}</p>
+                      <p><strong>{t('hours.tuesday')}:</strong> {t('hours.timeRange')}</p>
+                      <p><strong>{t('hours.wednesday')}:</strong> {t('hours.timeRange')}</p>
+                      <p><strong>{t('hours.thursday')}:</strong> {t('hours.timeRange')}</p>
+                      <p><strong>{t('hours.friday')}:</strong> {t('hours.timeRange')}</p>
+                      <p><strong>{t('hours.saturday')}:</strong> {t('hours.timeRange')}</p>
+                      <p><strong>{t('hours.sunday')}:</strong> {t('hours.closed')}</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="mt-12">
-                <h3 className="font-semibold text-xl mb-4">Follow Us</h3>
+                <h3 className="font-semibold text-xl mb-4">{t('contact.followUs')}</h3>
                 <div className="flex space-x-4">
                   <a 
                     href="#" 
@@ -105,10 +107,10 @@ const Contact = () => {
             <div>
               <div className="bg-white rounded-lg shadow-lg p-8 text-center">
                 <h2 className="font-playfair text-2xl font-semibold mb-6 text-beauty-darkpink text-center">
-                  Book an Appointment
+                  {t('contact.bookAppointment')}
                 </h2>
                 <p className="text-gray-700 mb-6">
-                  Ready to experience our services? Book your appointment online with our easy scheduling system.
+                  {t('contact.bookDescription')}
                 </p>
                 <a 
                   href="https://www.kalendes.com/site/artdelabeaute/reserve" 
@@ -116,7 +118,7 @@ const Contact = () => {
                   rel="noopener noreferrer" 
                   className="beauty-button inline-block"
                 >
-                  Book Now
+                  {t('bookNow')}
                 </a>
               </div>
             </div>
@@ -127,7 +129,7 @@ const Contact = () => {
       {/* Map Section */}
       <section className="py-16 bg-beauty-lightpink">
         <div className="beauty-container">
-          <h2 className="section-title">Find Us</h2>
+          <h2 className="section-title">{t('contact.findUs')}</h2>
           <div className="rounded-lg overflow-hidden shadow-lg">
             <div className="aspect-w-16 aspect-h-9">
               <iframe 

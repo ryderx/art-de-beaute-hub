@@ -3,35 +3,38 @@ import React from "react";
 import TestimonialCard from "../ui/TestimonialCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import { useLanguage } from "../../context/LanguageContext";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 const TestimonialsSection = () => {
+  const { t } = useLanguage();
+  
   const testimonials = [
     {
-      name: "Maria Rodriguez",
-      role: "Client",
-      quote: "The nail art service at Art de la Beautée exceeded all my expectations. Their attention to detail is unmatched, and the results were stunning!",
+      name: t('testimonials.client1.name'),
+      role: t('testimonials.client1.role'),
+      quote: t('testimonials.client1.quote'),
       image: "https://randomuser.me/api/portraits/women/23.jpg",
     },
     {
-      name: "Carmen Diaz",
-      role: "Nail Technician Graduate",
-      quote: "The training program gave me all the skills I needed to start my own successful nail business. The instructors were knowledgeable and supportive throughout my journey.",
+      name: t('testimonials.graduate1.name'),
+      role: t('testimonials.graduate1.role'),
+      quote: t('testimonials.graduate1.quote'),
       image: "https://randomuser.me/api/portraits/women/65.jpg",
     },
     {
-      name: "Josefina Perez",
-      role: "Client",
-      quote: "I've been getting my lash extensions here for years, and I wouldn't go anywhere else. The technique is flawless and the staff is always professional.",
+      name: t('testimonials.client2.name'),
+      role: t('testimonials.client2.role'),
+      quote: t('testimonials.client2.quote'),
       image: "https://randomuser.me/api/portraits/women/44.jpg",
     },
     {
-      name: "Luisa Hernandez",
-      role: "Beauty Specialist Graduate",
-      quote: "Learning at Art de la Beautée was transformative. The comprehensive curriculum and hands-on practice prepared me fully for a career in the beauty industry.",
+      name: t('testimonials.graduate2.name'),
+      role: t('testimonials.graduate2.role'),
+      quote: t('testimonials.graduate2.quote'),
       image: "https://randomuser.me/api/portraits/women/17.jpg",
     }
   ];
@@ -39,7 +42,7 @@ const TestimonialsSection = () => {
   return (
     <section className="py-20 bg-beauty-lightpink">
       <div className="beauty-container">
-        <h2 className="section-title">Client Testimonials</h2>
+        <h2 className="section-title">{t('testimonials.title')}</h2>
         
         <Swiper
           modules={[Pagination]}

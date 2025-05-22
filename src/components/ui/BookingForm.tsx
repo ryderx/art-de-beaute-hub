@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Calendar, Clock, User, Mail, Phone, MessageSquare } from "lucide-react";
+import { useLanguage } from "../../context/LanguageContext";
 
 interface BookingFormProps {
   type: "service" | "training";
@@ -9,6 +10,7 @@ interface BookingFormProps {
 
 const BookingForm: React.FC<BookingFormProps> = ({ type }) => {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,8 +31,8 @@ const BookingForm: React.FC<BookingFormProps> = ({ type }) => {
     console.log("Form submitted:", formData);
     
     toast({
-      title: type === "service" ? "Booking Request Sent" : "Enrollment Request Sent",
-      description: "We'll contact you shortly to confirm your request.",
+      title: type === "service" ? t('form.booking.success') : t('form.enrollment.success'),
+      description: t('form.confirmation'),
       variant: "default",
     });
 
@@ -48,14 +50,14 @@ const BookingForm: React.FC<BookingFormProps> = ({ type }) => {
 
   const serviceOptions = type === "service" 
     ? [
-        { value: "nail-service", label: "Nail Services" },
-        { value: "eyelash-extensions", label: "Eyelash Extensions" },
-        { value: "depilation", label: "Depilation" },
+        { value: "nail-service", label: t('services.nail.title') },
+        { value: "eyelash-extensions", label: t('services.lashes.title') },
+        { value: "depilation", label: t('services.depilation.title') },
       ]
     : [
-        { value: "nail-technician", label: "Nail Technician Program" },
-        { value: "eyelash-artist", label: "Eyelash Artist Program" },
-        { value: "beauty-specialist", label: "Beauty Specialist Program" },
+        { value: "nail-technician", label: t('academy.programs.nailTech.title') },
+        { value: "eyelash-artist", label: t('academy.programs.lashArtist.title') },
+        { value: "beauty-specialist", label: t('academy.programs.specialist.title') },
       ];
 
   return (
@@ -63,7 +65,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ type }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-            Full Name
+            {t('form.name')}
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -77,14 +79,14 @@ const BookingForm: React.FC<BookingFormProps> = ({ type }) => {
               value={formData.name}
               onChange={handleChange}
               className="pl-10 w-full border border-gray-300 rounded-md focus:ring-beauty-darkpink focus:border-beauty-darkpink p-3"
-              placeholder="Your name"
+              placeholder={t('form.namePlaceholder')}
             />
           </div>
         </div>
         
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-            Email
+            {t('form.email')}
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -98,14 +100,14 @@ const BookingForm: React.FC<BookingFormProps> = ({ type }) => {
               value={formData.email}
               onChange={handleChange}
               className="pl-10 w-full border border-gray-300 rounded-md focus:ring-beauty-darkpink focus:border-beauty-darkpink p-3"
-              placeholder="Your email"
+              placeholder={t('form.emailPlaceholder')}
             />
           </div>
         </div>
         
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-            Phone Number
+            {t('form.phone')}
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -118,14 +120,14 @@ const BookingForm: React.FC<BookingFormProps> = ({ type }) => {
               value={formData.phone}
               onChange={handleChange}
               className="pl-10 w-full border border-gray-300 rounded-md focus:ring-beauty-darkpink focus:border-beauty-darkpink p-3"
-              placeholder="Your phone"
+              placeholder={t('form.phonePlaceholder')}
             />
           </div>
         </div>
         
         <div>
           <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
-            {type === "service" ? "Service" : "Program"} Type
+            {type === "service" ? t('form.serviceType') : t('form.programType')}
           </label>
           <select
             id="service"
@@ -145,7 +147,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ type }) => {
         
         <div>
           <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-1">
-            Preferred Date
+            {t('form.date')}
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -165,7 +167,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ type }) => {
         
         <div>
           <label htmlFor="time" className="block text-sm font-medium text-gray-700 mb-1">
-            Preferred Time
+            {t('form.time')}
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -186,7 +188,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ type }) => {
       
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-          Additional Information
+          {t('form.message')}
         </label>
         <div className="relative">
           <div className="absolute inset-y-0 left-0 pl-3 pt-3 pointer-events-none">
@@ -199,7 +201,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ type }) => {
             value={formData.message}
             onChange={handleChange}
             className="pl-10 w-full border border-gray-300 rounded-md focus:ring-beauty-darkpink focus:border-beauty-darkpink p-3"
-            placeholder="Tell us more about your request..."
+            placeholder={t('form.messagePlaceholder')}
           ></textarea>
         </div>
       </div>
@@ -209,7 +211,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ type }) => {
           type="submit"
           className="beauty-button w-full md:w-auto"
         >
-          {type === "service" ? "Book Appointment" : "Enroll Now"}
+          {type === "service" ? t('form.bookAppointment') : t('form.enrollNow')}
         </button>
       </div>
     </form>

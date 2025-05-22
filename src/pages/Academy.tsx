@@ -10,55 +10,55 @@ const Academy = () => {
   const programs = [
     {
       id: "nail-technician",
-      title: "Nail Technician Program",
-      description: "Become a certified nail technician with our comprehensive training program. Learn all aspects of nail care, from basic manicures to advanced nail art and extensions.",
-      duration: "8 weeks",
-      schedule: "Full-time and part-time options available",
-      certification: "Professional Nail Technician Certificate",
+      title: t('academy.programs.nailTech.title'),
+      description: t('academy.programs.nailTech.description'),
+      duration: t('academy.programs.nailTech.duration'),
+      schedule: t('academy.programs.nailTech.schedule'),
+      certification: t('academy.programs.nailTech.certification'),
       topics: [
-        "Nail anatomy and health",
-        "Manicure and pedicure techniques",
-        "Gel and acrylic nail application",
-        "Advanced nail art and design",
-        "Salon safety and hygiene",
-        "Client consultation and service",
-        "Business management and marketing"
+        t('academy.programs.nailTech.topics.anatomy'),
+        t('academy.programs.nailTech.topics.techniques'),
+        t('academy.programs.nailTech.topics.application'),
+        t('academy.programs.nailTech.topics.art'),
+        t('academy.programs.nailTech.topics.safety'),
+        t('academy.programs.nailTech.topics.consultation'),
+        t('academy.programs.nailTech.topics.business')
       ],
       image: "https://images.unsplash.com/photo-1610992754290-22e8f8338a4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: "eyelash-artist",
-      title: "Eyelash Extension Artist",
-      description: "Master the art of eyelash extensions with our specialized training program. Learn to create beautiful, natural-looking lash enhancements for clients.",
-      duration: "4 weeks",
-      schedule: "Flexible scheduling options",
-      certification: "Certified Lash Technician",
+      title: t('academy.programs.lashArtist.title'),
+      description: t('academy.programs.lashArtist.description'),
+      duration: t('academy.programs.lashArtist.duration'),
+      schedule: t('academy.programs.lashArtist.schedule'),
+      certification: t('academy.programs.lashArtist.certification'),
       topics: [
-        "Eyelash anatomy and growth cycle",
-        "Classic lash application techniques",
-        "Volume and hybrid lash methods",
-        "Client consultation and design",
-        "Aftercare and maintenance",
-        "Health and safety protocols",
-        "Building your lash business"
+        t('academy.programs.lashArtist.topics.anatomy'),
+        t('academy.programs.lashArtist.topics.classic'),
+        t('academy.programs.lashArtist.topics.volume'),
+        t('academy.programs.lashArtist.topics.consultation'),
+        t('academy.programs.lashArtist.topics.aftercare'),
+        t('academy.programs.lashArtist.topics.safety'),
+        t('academy.programs.lashArtist.topics.business')
       ],
       image: "https://images.unsplash.com/photo-1583001809873-a128495da465?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: "beauty-specialist",
-      title: "Beauty Specialist Program",
-      description: "Our most comprehensive program covers nail care, eyelash extensions, and depilation techniques for a complete beauty education.",
-      duration: "12 weeks",
-      schedule: "Full-time and part-time options available",
-      certification: "Professional Beauty Specialist Certificate",
+      title: t('academy.programs.specialist.title'),
+      description: t('academy.programs.specialist.description'),
+      duration: t('academy.programs.specialist.duration'),
+      schedule: t('academy.programs.specialist.schedule'),
+      certification: t('academy.programs.specialist.certification'),
       topics: [
-        "Complete nail technician training",
-        "Full eyelash extension course",
-        "Professional depilation techniques",
-        "Makeup application fundamentals",
-        "Client assessment and consultation",
-        "Advanced beauty techniques",
-        "Beauty business management"
+        t('academy.programs.specialist.topics.nailTech'),
+        t('academy.programs.specialist.topics.lashExtension'),
+        t('academy.programs.specialist.topics.depilation'),
+        t('academy.programs.specialist.topics.makeup'),
+        t('academy.programs.specialist.topics.consultation'),
+        t('academy.programs.specialist.topics.advanced'),
+        t('academy.programs.specialist.topics.business')
       ],
       image: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     }
@@ -81,7 +81,7 @@ const Academy = () => {
       {/* Why Choose Our Academy */}
       <section className="py-16">
         <div className="beauty-container">
-          <h2 className="section-title">Why Choose Our Academy</h2>
+          <h2 className="section-title">{t('academy.whyChoose.title')}</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div className="p-6 border border-beauty-pink rounded-lg text-center">
@@ -90,9 +90,9 @@ const Academy = () => {
                   <Users size={32} />
                 </div>
               </div>
-              <h3 className="font-playfair text-xl font-semibold mb-2">Expert Instructors</h3>
+              <h3 className="font-playfair text-xl font-semibold mb-2">{t('academy.whyChoose.instructors.title')}</h3>
               <p className="text-gray-600">
-                Learn from industry professionals with years of experience and expertise.
+                {t('academy.whyChoose.instructors.description')}
               </p>
             </div>
             
@@ -102,9 +102,9 @@ const Academy = () => {
                   <CheckCircle size={32} />
                 </div>
               </div>
-              <h3 className="font-playfair text-xl font-semibold mb-2">Hands-On Training</h3>
+              <h3 className="font-playfair text-xl font-semibold mb-2">{t('academy.whyChoose.training.title')}</h3>
               <p className="text-gray-600">
-                Practical, real-world experience with plenty of supervised practice time.
+                {t('academy.whyChoose.training.description')}
               </p>
             </div>
             
@@ -114,9 +114,9 @@ const Academy = () => {
                   <Award size={32} />
                 </div>
               </div>
-              <h3 className="font-playfair text-xl font-semibold mb-2">Recognized Certification</h3>
+              <h3 className="font-playfair text-xl font-semibold mb-2">{t('academy.whyChoose.certification.title')}</h3>
               <p className="text-gray-600">
-                Earn industry-recognized certificates to boost your professional credentials.
+                {t('academy.whyChoose.certification.description')}
               </p>
             </div>
           </div>
@@ -126,7 +126,7 @@ const Academy = () => {
       {/* Programs */}
       <section className="py-16 bg-beauty-lightpink">
         <div className="beauty-container">
-          <h2 className="section-title">Our Programs</h2>
+          <h2 className="section-title">{t('academy.programs.title')}</h2>
 
           {programs.map((program, index) => (
             <div
@@ -161,19 +161,19 @@ const Academy = () => {
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center">
                       <Clock size={20} className="text-beauty-gold mr-2" />
-                      <span><strong>Duration:</strong> {program.duration}</span>
+                      <span><strong>{t('academy.programDetails.duration')}:</strong> {program.duration}</span>
                     </div>
                     <div className="flex items-center">
                       <Calendar size={20} className="text-beauty-gold mr-2" />
-                      <span><strong>Schedule:</strong> {program.schedule}</span>
+                      <span><strong>{t('academy.programDetails.schedule')}:</strong> {program.schedule}</span>
                     </div>
                     <div className="flex items-center">
                       <Award size={20} className="text-beauty-gold mr-2" />
-                      <span><strong>Certification:</strong> {program.certification}</span>
+                      <span><strong>{t('academy.programDetails.certification')}:</strong> {program.certification}</span>
                     </div>
                   </div>
                   
-                  <h4 className="font-semibold text-lg mb-2">What You'll Learn:</h4>
+                  <h4 className="font-semibold text-lg mb-2">{t('academy.programDetails.learn')}</h4>
                   <ul className="list-disc list-inside space-y-1 mb-6">
                     {program.topics.map((topic, i) => (
                       <li key={i} className="text-gray-700">{topic}</li>
@@ -198,10 +198,9 @@ const Academy = () => {
       {/* Enrollment Section */}
       <section id="enroll" className="py-16 bg-beauty-lightpink">
         <div className="beauty-container text-center">
-          <h2 className="section-title">Ready to Begin Your Beauty Career?</h2>
+          <h2 className="section-title">{t('academy.cta.title')}</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Take the first step towards your future in the beauty industry. 
-            Book a consultation to learn more about our programs and start your enrollment process.
+            {t('academy.cta.description')}
           </p>
           <a 
             href="https://www.kalendes.com/site/artdelabeaute/reserve"

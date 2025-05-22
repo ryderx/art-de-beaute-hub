@@ -10,88 +10,88 @@ const Services = () => {
   const services = [
     {
       id: "nail-services",
-      title: "Nail Services",
-      description: "From classic manicures and pedicures to advanced nail art and extensions, our expert technicians provide precision and style tailored to each client's personality and preferences.",
+      title: t('services.nail.title'),
+      description: t('services.nail.description'),
       image: "https://images.unsplash.com/photo-1604902396830-aca29e19b067?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       icon: <Sparkles size={32} />,
       treatments: [
         {
-          name: "Classic Manicure",
-          description: "Nail shaping, cuticle care, hand massage, and polish application"
+          name: t('services.treatments.nail.manicure.name'),
+          description: t('services.treatments.nail.manicure.description')
         },
         {
-          name: "Deluxe Pedicure",
-          description: "Foot soak, exfoliation, nail care, massage, and polish"
+          name: t('services.treatments.nail.pedicure.name'),
+          description: t('services.treatments.nail.pedicure.description')
         },
         {
-          name: "Gel Polish Application",
-          description: "Long-lasting gel polish with perfect shine and durability"
+          name: t('services.treatments.nail.gel.name'),
+          description: t('services.treatments.nail.gel.description')
         },
         {
-          name: "Nail Extensions",
-          description: "Acrylic or gel extensions with custom length and shape"
+          name: t('services.treatments.nail.extensions.name'),
+          description: t('services.treatments.nail.extensions.description')
         },
         {
-          name: "Nail Art Design",
-          description: "Custom art, stones, stickers, or hand-painted designs"
+          name: t('services.treatments.nail.art.name'),
+          description: t('services.treatments.nail.art.description')
         }
       ]
     },
     {
       id: "eyelash-extensions",
-      title: "Eyelash Extensions",
-      description: "Enhance your natural beauty with customized lash extension services that add volume, length, and definition to your eyes.",
+      title: t('services.lashes.title'),
+      description: t('services.lashes.description'),
       image: "https://images.unsplash.com/photo-1562625964-ffe11143e6fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       icon: <Eye size={32} />,
       treatments: [
         {
-          name: "Classic Lashes",
-          description: "1:1 application for a natural, enhanced look"
+          name: t('services.treatments.lashes.classic.name'),
+          description: t('services.treatments.lashes.classic.description')
         },
         {
-          name: "Volume Lashes",
-          description: "Multiple extensions per natural lash for added fullness"
+          name: t('services.treatments.lashes.volume.name'),
+          description: t('services.treatments.lashes.volume.description')
         },
         {
-          name: "Hybrid Lashes",
-          description: "Combination of classic and volume techniques"
+          name: t('services.treatments.lashes.hybrid.name'),
+          description: t('services.treatments.lashes.hybrid.description')
         },
         {
-          name: "Lash Lift & Tint",
-          description: "Semi-permanent curl and color for natural lashes"
+          name: t('services.treatments.lashes.lift.name'),
+          description: t('services.treatments.lashes.lift.description')
         },
         {
-          name: "Lash Maintenance",
-          description: "Fill-in service for maintaining lash extensions"
+          name: t('services.treatments.lashes.maintenance.name'),
+          description: t('services.treatments.lashes.maintenance.description')
         }
       ]
     },
     {
       id: "depilation",
-      title: "Depilation",
-      description: "Experience smooth, hair-free skin with our effective and gentle waxing and hair removal services, designed for all skin types.",
+      title: t('services.depilation.title'),
+      description: t('services.depilation.description'),
       image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       icon: <Scissors size={32} />,
       treatments: [
         {
-          name: "Eyebrow Waxing",
-          description: "Reshape and define your brows"
+          name: t('services.treatments.depilation.eyebrow.name'),
+          description: t('services.treatments.depilation.eyebrow.description')
         },
         {
-          name: "Lip & Chin Waxing",
-          description: "Quick and effective facial hair removal"
+          name: t('services.treatments.depilation.facial.name'),
+          description: t('services.treatments.depilation.facial.description')
         },
         {
-          name: "Half Leg Waxing",
-          description: "From ankle to knee or knee to thigh"
+          name: t('services.treatments.depilation.halfLeg.name'),
+          description: t('services.treatments.depilation.halfLeg.description')
         },
         {
-          name: "Full Leg Waxing",
-          description: "Complete leg hair removal"
+          name: t('services.treatments.depilation.fullLeg.name'),
+          description: t('services.treatments.depilation.fullLeg.description')
         },
         {
-          name: "Brazilian Waxing",
-          description: "Full bikini area hair removal"
+          name: t('services.treatments.depilation.brazilian.name'),
+          description: t('services.treatments.depilation.brazilian.description')
         }
       ]
     }
@@ -106,8 +106,7 @@ const Services = () => {
             {t('services.title')}
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
-            Discover our professional beauty services designed to enhance your natural beauty
-            and provide you with a luxurious, personalized experience.
+            {t('services.description')}
           </p>
         </div>
       </section>
@@ -145,7 +144,7 @@ const Services = () => {
                   <p className="text-gray-700 mb-8">{service.description}</p>
                   
                   <h3 className="font-playfair text-xl font-semibold mb-4">
-                    Treatments
+                    {t('services.treatments.title')}
                   </h3>
                   <div className="space-y-4 mb-8">
                     {service.treatments.map((treatment, i) => (
@@ -176,9 +175,9 @@ const Services = () => {
       {/* Booking CTA */}
       <section className="py-16 bg-beauty-lightpink">
         <div className="beauty-container text-center">
-          <h2 className="section-title">Ready to Experience Our Services?</h2>
+          <h2 className="section-title">{t('services.cta.title')}</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Book your appointment today and let our expert team take care of all your beauty needs.
+            {t('services.cta.description')}
           </p>
           <a 
             href="https://www.kalendes.com/site/artdelabeaute/reserve"
