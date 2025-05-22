@@ -3,21 +3,23 @@ import React from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
+import { useLanguage } from "../../context/LanguageContext";
 
 const ContactSection = () => {
+  const { t } = useLanguage();
+  
   return (
     <section className="py-20 bg-white">
       <div className="beauty-container">
-        <h2 className="section-title">Contact Us</h2>
+        <h2 className="section-title">{t('contact.title')}</h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h3 className="font-playfair text-2xl font-semibold mb-6 text-beauty-darkpink">
-              Get In Touch
+              {t('contact.getInTouch')}
             </h3>
             <p className="text-gray-700 mb-8">
-              Whether you're looking to book a service, enroll in our academy, or simply have a question, 
-              we're here to help. Reach out to us using the information below.
+              {t('contact.subtitle')}
             </p>
             
             <div className="space-y-6">
@@ -26,7 +28,7 @@ const ContactSection = () => {
                   <MapPin size={24} className="text-beauty-darkpink" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Our Location</h4>
+                  <h4 className="font-semibold mb-1">{t('contact.location')}</h4>
                   <address className="not-italic text-gray-600">
                     66 Rue Porte Saint-Jean<br />
                     45000 Orléans, France
@@ -39,7 +41,7 @@ const ContactSection = () => {
                   <Phone size={24} className="text-beauty-darkpink" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Phone Number</h4>
+                  <h4 className="font-semibold mb-1">{t('contact.phone')}</h4>
                   <p className="text-gray-600">07.82.22.05.63</p>
                 </div>
               </div>
@@ -49,7 +51,7 @@ const ContactSection = () => {
                   <Mail size={24} className="text-beauty-darkpink" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Email Address</h4>
+                  <h4 className="font-semibold mb-1">{t('contact.email')}</h4>
                   <p className="text-gray-600">munozjulia1977@gmail.com</p>
                 </div>
               </div>
@@ -59,22 +61,22 @@ const ContactSection = () => {
                   <Clock size={24} className="text-beauty-darkpink" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Business Hours</h4>
+                  <h4 className="font-semibold mb-1">{t('contact.hours')}</h4>
                   <div className="text-gray-600">
-                    <p><strong>Lundi:</strong> 05:00 – 14:00</p>
-                    <p><strong>Mardi:</strong> 05:00 – 14:00</p>
-                    <p><strong>Mercredi:</strong> 05:00 – 14:00</p>
-                    <p><strong>Jeudi:</strong> 05:00 – 14:00</p>
-                    <p><strong>Vendredi:</strong> 05:00 – 14:00</p>
-                    <p><strong>Samedi:</strong> 05:00 – 14:00</p>
-                    <p><strong>Dimanche:</strong> Fermé</p>
+                    <p><strong>{t('hours.monday')}:</strong> {t('hours.timeRange')}</p>
+                    <p><strong>{t('hours.tuesday')}:</strong> {t('hours.timeRange')}</p>
+                    <p><strong>{t('hours.wednesday')}:</strong> {t('hours.timeRange')}</p>
+                    <p><strong>{t('hours.thursday')}:</strong> {t('hours.timeRange')}</p>
+                    <p><strong>{t('hours.friday')}:</strong> {t('hours.timeRange')}</p>
+                    <p><strong>{t('hours.saturday')}:</strong> {t('hours.timeRange')}</p>
+                    <p><strong>{t('hours.sunday')}:</strong> {t('hours.closed')}</p>
                   </div>
                 </div>
               </div>
             </div>
             
             <div className="mt-10">
-              <h4 className="font-semibold mb-3">Follow Us</h4>
+              <h4 className="font-semibold mb-3">{t('contact.followUs')}</h4>
               <div className="flex space-x-4">
                 <a 
                   href="#" 
@@ -97,10 +99,10 @@ const ContactSection = () => {
           <div>
             <div className="bg-white rounded-lg shadow-lg p-8 text-center">
               <h3 className="font-playfair text-2xl font-semibold mb-6 text-beauty-darkpink">
-                Book an Appointment
+                {t('contact.bookAppointment')}
               </h3>
               <p className="text-gray-700 mb-6">
-                Ready to experience our services? Book your appointment online with our easy scheduling system.
+                {t('contact.bookDescription')}
               </p>
               <a 
                 href="https://www.kalendes.com/site/artdelabeaute/reserve" 
@@ -108,7 +110,7 @@ const ContactSection = () => {
                 rel="noopener noreferrer" 
                 className="beauty-button inline-block"
               >
-                Book Now
+                {t('bookNow')}
               </a>
             </div>
           </div>

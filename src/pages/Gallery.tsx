@@ -2,9 +2,11 @@
 import React, { useState } from "react";
 import Layout from "../components/layout/Layout";
 import GalleryItem from "../components/ui/GalleryItem";
+import { useLanguage } from "../context/LanguageContext";
 
 const Gallery = () => {
   const [activeFilter, setActiveFilter] = useState("all");
+  const { t } = useLanguage();
 
   const galleryItems = [
     {
@@ -82,10 +84,10 @@ const Gallery = () => {
   ];
 
   const filters = [
-    { id: "all", name: "All" },
-    { id: "nail-art", name: "Nail Art" },
-    { id: "eyelash", name: "Eyelash Extensions" },
-    { id: "training", name: "Training" },
+    { id: "all", name: t('gallery.filters.all') },
+    { id: "nail-art", name: t('gallery.filters.nailArt') },
+    { id: "eyelash", name: t('gallery.filters.eyelash') },
+    { id: "training", name: t('gallery.filters.training') },
   ];
   
   const filteredItems = activeFilter === "all" 
@@ -98,11 +100,10 @@ const Gallery = () => {
       <section className="relative pt-32 pb-16 bg-beauty-gradient">
         <div className="beauty-container text-center">
           <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-6">
-            Our Gallery
+            {t('gallery.title')}
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
-            Explore our portfolio of nail art, eyelash extensions, and training programs.
-            Get inspired for your next beauty appointment or career path.
+            {t('gallery.description')}
           </p>
         </div>
       </section>
@@ -135,10 +136,10 @@ const Gallery = () => {
                 image={item.image}
                 category={
                   item.category === "nail-art" 
-                    ? "Nail Art" 
+                    ? t('gallery.categories.nailArt')
                     : item.category === "eyelash" 
-                    ? "Eyelash Extensions" 
-                    : "Training"
+                    ? t('gallery.categories.eyelash')
+                    : t('gallery.categories.training')
                 }
                 title={item.title}
               />
@@ -148,7 +149,7 @@ const Gallery = () => {
           {/* Empty state if no items match filter */}
           {filteredItems.length === 0 && (
             <div className="text-center py-20">
-              <p className="text-xl text-gray-500">No gallery items found for this filter.</p>
+              <p className="text-xl text-gray-500">{t('gallery.noItems')}</p>
             </div>
           )}
         </div>
