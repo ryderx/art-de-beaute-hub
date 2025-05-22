@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 // Available languages
@@ -16,6 +15,15 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 // Translation data
 const translations = {
   fr: {
+    // Hero Section
+    'hero.title': 'Découvrez l\'Art de la',
+    'hero.beauty': 'Beauté',
+    'hero.elegance': 'Élégance',
+    'hero.description': 'Un institut de beauté distingué dédié à la prestation de services de beauté et d\'éducation professionnelle de premier ordre en République dominicaine.',
+    'hero.servicesButton': 'Nos Services',
+    'hero.academyButton': 'Académie de Beauté',
+    'hero.imageAlt': 'Professionnel de beauté au travail',
+    
     // Navigation
     'nav.home': 'Accueil',
     'nav.services': 'Services',
@@ -113,6 +121,15 @@ const translations = {
   },
   
   es: {
+    // Hero Section
+    'hero.title': 'Descubre el Arte de la',
+    'hero.beauty': 'Belleza',
+    'hero.elegance': 'Elegancia',
+    'hero.description': 'Un distinguido instituto de belleza dedicado a ofrecer servicios de belleza y educación profesional de primer nivel en la República Dominicana.',
+    'hero.servicesButton': 'Nuestros Servicios',
+    'hero.academyButton': 'Academia de Belleza',
+    'hero.imageAlt': 'Profesional de belleza trabajando',
+    
     // Navigation
     'nav.home': 'Inicio',
     'nav.services': 'Servicios',
@@ -156,7 +173,7 @@ const translations = {
     // Services
     'services.title': 'Nuestros Servicios',
     'services.nail.title': 'Servicios de Uñas',
-    'services.nail.description': 'Desde manicuras y pedicuras clásicas hasta arte de uñas avanzado y extensiones, nuestros técnicos expertos proporcionan precisión y estilo.',
+    'services.nail.description': 'Desde manicuras y pedicures clásicas hasta arte de uñas avanzado y extensiones, nuestros técnicos expertos proporcionan precisión y estilo.',
     'services.lashes.title': 'Extensiones de Pestañas',
     'services.lashes.description': 'Realce su belleza natural con nuestros servicios personalizados de extensiones de pestañas que añaden volumen, longitud y definición a sus ojos.',
     'services.depilation.title': 'Depilación',
@@ -210,6 +227,15 @@ const translations = {
   },
   
   en: {
+    // Hero Section
+    'hero.title': 'Discover the Art of',
+    'hero.beauty': 'Beauty',
+    'hero.elegance': 'Elegance',
+    'hero.description': 'A distinguished beauty institute dedicated to delivering top-tier beauty services and professional education in the Dominican Republic.',
+    'hero.servicesButton': 'Our Services',
+    'hero.academyButton': 'Beauty Academy',
+    'hero.imageAlt': 'Beauty professional working',
+    
     // Navigation
     'nav.home': 'Home',
     'nav.services': 'Services',
