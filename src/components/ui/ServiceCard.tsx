@@ -2,6 +2,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext";
 
 interface ServiceCardProps {
   title: string;
@@ -11,6 +12,8 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, link }) => {
+  const { t } = useLanguage();
+  
   return (
     <div className="beauty-card group">
       <div className="p-6">
@@ -26,7 +29,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, lin
             to={link}
             className="inline-flex items-center text-beauty-darkpink hover:text-beauty-gold transition-colors"
           >
-            Learn more <ArrowRight size={16} className="ml-1" />
+            {t('learnMore')} <ArrowRight size={16} className="ml-1" />
           </Link>
         </div>
       </div>
