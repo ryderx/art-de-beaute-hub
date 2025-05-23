@@ -7,7 +7,6 @@ import ServicesSection from "../components/sections/ServicesSection";
 import GallerySection from "../components/sections/GallerySection";
 import ContactSection from "../components/sections/ContactSection";
 import AcademySection from "../components/sections/AcademySection";
-import TestimonialsSection from "../components/sections/TestimonialsSection";
 import { ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "../context/LanguageContext";
@@ -31,7 +30,6 @@ const Index = () => {
       <ServicesSection />
       <AboutSection />
       <AcademySection />
-      <TestimonialsSection />
       
       {/* Booking CTA Section */}
       <section className="py-16 bg-beauty-darkpink text-white">
