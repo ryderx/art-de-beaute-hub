@@ -11,19 +11,19 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "/public/images/image1.png",
       category: "nail-art",
       title: "Elegant French Manicure"
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1604659522058-4e9ef02d0b3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "/public/images/image5.png",
       category: "nail-art",
       title: "Floral Nail Design"
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "/public/images/image4.png",
       category: "nail-art",
       title: "Crystal Embellishments"
     },
@@ -59,7 +59,7 @@ const Gallery = () => {
     },
     {
       id: 9,
-      image: "https://images.unsplash.com/photo-1621178356935-bf9c56c0cca0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "/public/images/image6.png",
       category: "nail-art",
       title: "Geometric Nail Art"
     },
@@ -77,7 +77,7 @@ const Gallery = () => {
     },
     {
       id: 12,
-      image: "https://images.unsplash.com/photo-1635368725375-0231a5513151?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "/public/images/image2.png",
       category: "nail-art",
       title: "Glitter Accent Nails"
     }
