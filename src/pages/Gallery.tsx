@@ -47,7 +47,7 @@ const Gallery = () => {
     },
     {
       id: 7,
-      image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "/public/images/image8.jpg",
       category: "training",
       title: "Student Certification"
     },
@@ -65,7 +65,7 @@ const Gallery = () => {
     },
     {
       id: 10,
-      image: "https://images.unsplash.com/photo-1599206676335-193c82b13c9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "/public/images/image7.jpg",
       category: "training",
       title: "Classroom Instruction"
     },
