@@ -53,7 +53,7 @@ const Gallery = () => {
     },
     {
       id: 8,
-      image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "/public/images/image9.jpg",
       category: "training",
       title: "Hands-on Training"
     },

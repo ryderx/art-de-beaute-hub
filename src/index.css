@@ -102,7 +102,7 @@
   }
 
   .beauty-button {
-    @apply px-6 py-3 bg-beauty-pink text-beauty-darkpink font-medium rounded-md hover:bg-beauty-darkpink hover:text-white transition-all duration-300 inline-flex items-center justify-center;
+    @apply px-6 pt-1 pb-1 bg-beauty-pink text-beauty-darkpink font-medium rounded-md hover:bg-beauty-darkpink hover:text-white transition-all duration-300 inline-flex items-center justify-center;
   }
 
   .beauty-button-outline {
