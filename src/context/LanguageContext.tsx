@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 // Available languages
@@ -22,13 +21,13 @@ const translations = {
     'hero.elegance': 'Élégance',
     'hero.description': 'Un institut de beauté distingué dédié à la prestation de services de beauté et d\'éducation professionnelle de premier ordre en Orléans, France',
     'hero.servicesButton': 'Nos Services',
-    'hero.academyButton': 'Académie de Beauté',
+    'hero.academyButton': 'Formation de Beauté',
     'hero.imageAlt': 'Professionnel de beauté au travail',
     
     // Navigation
     'nav.home': 'Accueil',
     'nav.services': 'Services',
-    'nav.academy': 'Académie',
+    'nav.academy': 'Formation',
     'nav.gallery': 'Galerie',
     'nav.about': 'À propos',
     'nav.contact': 'Contact',
@@ -115,9 +114,9 @@ const translations = {
     'services.treatments.depilation.brazilian.description': 'Épilation complète de la zone bikini',
     
     // Academy
-    'academy.title': 'Académie de Beauté',
+    'academy.title': 'Formation de Beauté',
     'academy.subtitle': 'Commencez ou avancez votre carrière dans l\'industrie de la beauté avec nos programmes de certification professionnelle.',
-    'academy.whyChoose.title': 'Pourquoi Choisir Notre Académie',
+    'academy.whyChoose.title': 'Pourquoi Choisir Notre Formation',
     'academy.whyChoose.instructors.title': 'Instructeurs Experts',
     'academy.whyChoose.instructors.description': 'Apprenez avec des professionnels de l\'industrie ayant des années d\'expérience et d\'expertise.',
     'academy.whyChoose.training.title': 'Formation Pratique',
@@ -255,13 +254,13 @@ const translations = {
     'hero.elegance': 'Elegancia',
     'hero.description': 'Un distinguido instituto de belleza dedicado a ofrecer servicios de belleza y educación profesional de primer nivel en Orléans, Francia',
     'hero.servicesButton': 'Nuestros Servicios',
-    'hero.academyButton': 'Academia de Belleza',
+    'hero.academyButton': 'Formación de Belleza',
     'hero.imageAlt': 'Profesional de belleza trabajando',
     
     // Navigation
     'nav.home': 'Inicio',
     'nav.services': 'Servicios',
-    'nav.academy': 'Academia',
+    'nav.academy': 'Formación',
     'nav.gallery': 'Galería',
     'nav.about': 'Acerca de',
     'nav.contact': 'Contacto',
@@ -348,9 +347,9 @@ const translations = {
     'services.treatments.depilation.brazilian.description': 'Eliminación completa del vello en la zona del bikini',
 
     // Academy
-    'academy.title': 'Academia de Belleza',
+    'academy.title': 'Formación de Belleza',
     'academy.subtitle': 'Comience o avance su carrera en la industria de la belleza con nuestros programas de certificación profesional.',
-    'academy.whyChoose.title': 'Por Qué Elegir Nuestra Academia',
+    'academy.whyChoose.title': 'Por Qué Elegir Nuestra Formación',
     'academy.whyChoose.instructors.title': 'Instructores Expertos',
     'academy.whyChoose.instructors.description': 'Aprenda de profesionales de la industria con años de experiencia y conocimientos.',
     'academy.whyChoose.training.title': 'Entrenamiento Práctico',
@@ -488,13 +487,13 @@ const translations = {
     'hero.elegance': 'Elegance',
     'hero.description': 'A distinguished beauty institute dedicated to delivering top-tier beauty services and professional education in Orléans, France.',
     'hero.servicesButton': 'Our Services',
-    'hero.academyButton': 'Beauty Academy',
+    'hero.academyButton': 'Beauty Training',
     'hero.imageAlt': 'Beauty professional working',
     
     // Navigation
     'nav.home': 'Home',
     'nav.services': 'Services',
-    'nav.academy': 'Academy',
+    'nav.academy': 'Training',
     'nav.gallery': 'Gallery',
     'nav.about': 'About',
     'nav.contact': 'Contact',
@@ -581,9 +580,9 @@ const translations = {
     'services.treatments.depilation.brazilian.description': 'Full bikini area hair removal',
     
     // Academy
-    'academy.title': 'Beauty Academy',
+    'academy.title': 'Beauty Training',
     'academy.subtitle': 'Start or advance your career in the beauty industry with our professional certification programs.',
-    'academy.whyChoose.title': 'Why Choose Our Academy',
+    'academy.whyChoose.title': 'Why Choose Our Training',
     'academy.whyChoose.instructors.title': 'Expert Instructors',
     'academy.whyChoose.instructors.description': 'Learn from industry professionals with years of experience and expertise.',
     'academy.whyChoose.training.title': 'Hands-On Training',
