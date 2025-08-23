@@ -24,7 +24,7 @@ const Academy = () => {
         t('academy.programs.nailTech.topics.consultation'),
         t('academy.programs.nailTech.topics.business')
       ],
-      image: "https://images.unsplash.com/photo-1610992754290-22e8f8338a4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "/images/formation ongles.jpg"
     },
     {
       id: "eyelash-artist",
