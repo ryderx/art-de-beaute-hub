@@ -19,7 +19,7 @@ const translations = {
     'hero.title': 'Découvrez l\'Art de la',
     'hero.beauty': 'Beauté',
     'hero.elegance': '',
-    'hero.description': 'Un institut de beauté raffiné, dédié à la prestation de services esthétiques et à la formation professionnelle à Orléans, France.,
+    'hero.description': 'Un institut de beauté raffiné, dédié à la prestation de services esthétiques et à la formation professionnelle à Orléans, France.',
     'hero.servicesButton': 'Nos Services',
     'hero.academyButton': 'Formation de Beauté',
     'hero.imageAlt': 'Professionnel de beauté au travail',
