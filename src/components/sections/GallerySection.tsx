@@ -9,22 +9,22 @@ const GallerySection = () => {
   
   const galleryItems = [
     {
-      image: "/images/manicure.jpg",
+      image: "/images/image1.png",
       category: t('gallery.categories.nailArt'),
       title: t('gallery.items.manicure')
     },
     {
-      image: "/images/lashes.jpg",
+      image: "/images/image6.png",
       category: t('gallery.categories.eyelash'),
       title: t('gallery.items.lashes')
     },
     {
-      image: "/images/certification.jpg",
+      image: "/images/image8.jpg",
       category: t('gallery.categories.training'),
       title: t('gallery.items.certification')
     },
     {
-      image: "/images/crystal.jpg",
+      image: "/images/image4.png",
       category: t('gallery.categories.nailArt'),
       title: t('gallery.items.crystal')
     }
