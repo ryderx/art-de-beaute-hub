@@ -16,7 +16,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations = {
   fr: {
     // Hero Section
-    'hero.title': 'Découvrez l\'Art de la',
+    'hero.title': 'Découvrez Art de la',
     'hero.beauty': 'Beauté',
     'hero.elegance': '',
     'hero.description': 'Un institut de beauté raffiné, dédié à la prestation de services esthétiques et à la formation professionnelle à Orléans, France.',
