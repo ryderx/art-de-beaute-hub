@@ -24,7 +24,7 @@ const Academy = () => {
         t('academy.programs.nailTech.topics.consultation'),
         t('academy.programs.nailTech.topics.business')
       ],
-      image: "/images/formation ongles.jpg"
+      image: "/images/formation_ongles.jpg"
     },
     {
       id: "eyelash-artist",
@@ -42,7 +42,7 @@ const Academy = () => {
         t('academy.programs.lashArtist.topics.safety'),
         t('academy.programs.lashArtist.topics.business')
       ],
-      image: "https://images.unsplash.com/photo-1583001809873-a128495da465?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "/images/formation_cils.jpg"
     }
   ];
 
