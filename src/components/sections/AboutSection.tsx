@@ -58,14 +58,6 @@ const AboutSection = () => {
                   <ChevronRight size={20} />
                 </span>
                 <span>
-                  <strong className="font-medium">{t('about.reasons.education.title')}:</strong> {t('about.reasons.education.description')}
-                </span>
-              </li>
-              <li className="flex">
-                <span className="mr-2 text-beauty-gold">
-                  <ChevronRight size={20} />
-                </span>
-                <span>
                   <strong className="font-medium">{t('about.reasons.experience.title')}:</strong> {t('about.reasons.experience.description')}
                 </span>
               </li>
