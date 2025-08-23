@@ -43,24 +43,6 @@ const Academy = () => {
         t('academy.programs.lashArtist.topics.business')
       ],
       image: "https://images.unsplash.com/photo-1583001809873-a128495da465?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      id: "beauty-specialist",
-      title: t('academy.programs.specialist.title'),
-      description: t('academy.programs.specialist.description'),
-      duration: t('academy.programs.specialist.duration'),
-      schedule: t('academy.programs.specialist.schedule'),
-      certification: t('academy.programs.specialist.certification'),
-      topics: [
-        t('academy.programs.specialist.topics.nailTech'),
-        t('academy.programs.specialist.topics.lashExtension'),
-        t('academy.programs.specialist.topics.depilation'),
-        t('academy.programs.specialist.topics.makeup'),
-        t('academy.programs.specialist.topics.consultation'),
-        t('academy.programs.specialist.topics.advanced'),
-        t('academy.programs.specialist.topics.business')
-      ],
-      image: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
