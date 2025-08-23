@@ -35,7 +35,7 @@ const translations = {
 
     // About Page
     'about.title': 'À propos de Art de la Beauté',
-    'about.subtitle': 'Un institut de beauté distingué, basé à Orléans (France), dédié à l’offre de services esthétiques et de formation professionnelle',
+    'about.subtitle': 'Un institut de beauté distingué, basé à Orléans (France), dédié à l\'offre de services esthétiques et de formation professionnelle',
     'about.story.title': 'Notre Histoire',
     'about.story.paragraph1': 'Art de la Beautée a été fondé en 2019 avec la vision de créer un espace où les services de beauté et l\'éducation professionnelle pourraient coexister, élevant la norme des soins de beauté en France.',
     'about.story.paragraph2': 'Ce qui a commencé comme un petit salon d\'ongles est devenu un institut de beauté complet offrant une large gamme de services et de programmes de certification professionnelle. Notre parcours a été guidé par un engagement envers l\'excellence, l\'innovation et l\'autonomisation des individus par la beauté.',
