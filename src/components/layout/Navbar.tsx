@@ -1,7 +1,9 @@
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Globe } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,6 +12,7 @@ const Navbar = () => {
     setLanguage,
     t
   } = useLanguage();
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
@@ -23,16 +26,26 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   const closeMenu = () => {
     setIsOpen(false);
   };
+
+  const handleNavClick = () => {
+    closeMenu();
+    // Scroll to top when navigation link is clicked
+    window.scrollTo(0, 0);
+  };
+
   const changeLanguage = lang => {
     setLanguage(lang);
     closeMenu();
   };
+
   const navLinks = [{
     name: t('nav.home'),
     path: "/"
@@ -52,9 +65,10 @@ const Navbar = () => {
     name: t('nav.contact'),
     path: "/contact"
   }];
+
   return <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-sm shadow-sm py-2" : "bg-transparent py-4"}`}>
       <div className="beauty-container flex justify-between items-center">
-        <Link to="/" className="flex items-center" onClick={closeMenu}>
+        <Link to="/" className="flex items-center" onClick={handleNavClick}>
           <span className="font-playfair text-2xl font-bold text-beauty-darkpink">
             Art de la <span className="text-beauty-gold">Beauté</span>
           </span>
@@ -86,7 +100,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6 items-center">
-          {navLinks.map(link => <Link key={link.name} to={link.path} className="text-beauty-darkpink hover:text-beauty-gold transition-colors font-medium">
+          {navLinks.map(link => <Link key={link.name} to={link.path} className="text-beauty-darkpink hover:text-beauty-gold transition-colors font-medium" onClick={handleNavClick}>
               {link.name}
             </Link>)}
           
@@ -124,7 +138,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className="flex flex-col items-center pt-10 space-y-8">
-            {navLinks.map(link => <Link key={link.name} to={link.path} className="text-xl text-beauty-darkpink hover:text-beauty-gold transition-colors font-medium" onClick={closeMenu}>
+            {navLinks.map(link => <Link key={link.name} to={link.path} className="text-xl text-beauty-darkpink hover:text-beauty-gold transition-colors font-medium" onClick={handleNavClick}>
                 {link.name}
               </Link>)}
             
@@ -142,4 +156,5 @@ const Navbar = () => {
       </div>
     </nav>;
 };
+
 export default Navbar;
