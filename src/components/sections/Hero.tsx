@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="beauty-container flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0 text-center lg:text-left">
           <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            {t('hero.title')} <span className="text-beauty-darkpink">{t('hero.beauty')}</span> & <span className="text-beauty-gold">{t('hero.elegance')}</span>
+            {t('hero.title')} <span className="text-beauty-darkpink">{t('hero.beauty')}</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-xl mx-auto lg:mx-0">
             {t('hero.description')}
