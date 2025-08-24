@@ -43,6 +43,24 @@ const Academy = () => {
         t('academy.programs.lashArtist.topics.business')
       ],
       image: "/images/formation_cils.jpg"
+    },
+    {
+      id: "eyelash-artist",
+      title: t('academy.programs.lashArtist.title'),
+      description: t('academy.programs.lashArtist.description'),
+      duration: t('academy.programs.lashArtist.duration'),
+      schedule: t('academy.programs.lashArtist.schedule'),
+      certification: t('academy.programs.lashArtist.certification'),
+      topics: [
+        t('academy.programs.lashArtist.topics.anatomy'),
+        t('academy.programs.lashArtist.topics.classic'),
+        t('academy.programs.lashArtist.topics.volume'),
+        t('academy.programs.lashArtist.topics.consultation'),
+        t('academy.programs.lashArtist.topics.aftercare'),
+        t('academy.programs.lashArtist.topics.safety'),
+        t('academy.programs.lashArtist.topics.business')
+      ],
+      image: "/images/formation_cils.jpg"
     }
   ];
 
