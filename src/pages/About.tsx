@@ -67,7 +67,7 @@ const About = () => {
               <div className="relative">
                 <div className="absolute -top-4 -right-4 w-full h-full border-2 border-beauty-gold rounded-lg"></div>
                 <img
-                  src="/images/about_us.png"
+                  src="/images/image_about1.png"
                   alt="Our Beauty Institute"
                   className="relative z-10 rounded-lg shadow-lg w-full h-auto"
                 />
