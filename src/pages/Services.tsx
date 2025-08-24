@@ -65,6 +65,35 @@ const Services = () => {
           description: t('services.treatments.lashes.maintenance.description')
         }
       ]
+    },
+    {
+      id: "depilation",
+      title: t('services.depilation.title'),
+      description: t('services.depilation.description'),
+      image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      icon: <Scissors size={32} />,
+      treatments: [
+        {
+          name: t('services.treatments.depilation.eyebrow.name'),
+          description: t('services.treatments.depilation.eyebrow.description')
+        },
+        {
+          name: t('services.treatments.depilation.facial.name'),
+          description: t('services.treatments.depilation.facial.description')
+        },
+        {
+          name: t('services.treatments.depilation.halfLeg.name'),
+          description: t('services.treatments.depilation.halfLeg.description')
+        },
+        {
+          name: t('services.treatments.depilation.fullLeg.name'),
+          description: t('services.treatments.depilation.fullLeg.description')
+        },
+        {
+          name: t('services.treatments.depilation.brazilian.name'),
+          description: t('services.treatments.depilation.brazilian.description')
+        }
+      ]
     }
   ];
 

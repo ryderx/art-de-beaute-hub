@@ -84,7 +84,7 @@ const translations = {
     'services.treatments.nail.manicure.description': 'Mise en forme des ongles, soin des cuticules, massage des mains et application de vernis',
     'services.treatments.nail.pedicure.name': 'Pédicure Classique',
     'services.treatments.nail.pedicure.description': 'Bain de pieds, exfoliation, soin des ongles, massage et vernis',
-    'services.treatments.nail.gel.name': 'Application de Vernis Gel',
+    'services.treatments.nail.gel.name': 'Application de Vernis Semipermanent',
     'services.treatments.nail.gel.description': 'Vernis Semipermanent longue durée avec brillance et durabilité parfaites',
     'services.treatments.nail.extensions.name': 'Extensions d\'Ongles',
     'services.treatments.nail.extensions.description': 'Extensions en acrylique ou en gel avec longueur et forme personnalisées',
