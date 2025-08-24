@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Layout from "../components/layout/Layout";
 import GalleryItem from "../components/ui/GalleryItem";
@@ -11,19 +10,19 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      image: "/public/images/image1.png",
+      image: "/images/image1.png",
       category: "nail-art",
       title: "Elegant French Manicure"
     },
     {
       id: 2,
-      image: "/public/images/image5.png",
+      image: "/images/image5.png",
       category: "nail-art",
       title: "Floral Nail Design"
     },
     {
       id: 3,
-      image: "/public/images/image4.png",
+      image: "/images/image4.png",
       category: "nail-art",
       title: "Crystal Embellishments"
     },
@@ -47,25 +46,25 @@ const Gallery = () => {
     },
     {
       id: 7,
-      image: "/public/images/image8.jpg",
+      image: "/images/image8.jpg",
       category: "training",
       title: "Student Certification"
     },
     {
       id: 8,
-      image: "/public/images/image9.jpg",
+      image: "/images/image9.jpg",
       category: "training",
       title: "Hands-on Training"
     },
     {
       id: 9,
-      image: "/public/images/image6.png",
+      image: "/images/image6.png",
       category: "nail-art",
       title: "Geometric Nail Art"
     },
     {
       id: 10,
-      image: "/public/images/image7.jpg",
+      image: "/images/image7.jpg",
       category: "training",
       title: "Classroom Instruction"
     },
@@ -77,7 +76,7 @@ const Gallery = () => {
     },
     {
       id: 12,
-      image: "/public/images/image2.png",
+      image: "/images/image2.png",
       category: "nail-art",
       title: "Glitter Accent Nails"
     }
