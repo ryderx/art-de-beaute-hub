@@ -56,7 +56,6 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="text-gray-600">{t('services.nail.title')}</li>
               <li className="text-gray-600">{t('services.lashes.title')}</li>
-              <li className="text-gray-600">{t('services.depilation.title')}</li>
               <li className="text-gray-600">{t('services.training.title')}</li>
             </ul>
           </div>
@@ -66,7 +65,7 @@ const Footer = () => {
             <address className="not-italic text-gray-600 space-y-3">
               <p>66 Rue Porte Saint-Jean, 45000 Orléans, France</p>
               <p>Email: munozjulia1977@gmail.com</p>
-              <p>Phone: 07.82.22.05.63</p>
+              <p>Telephone: 07.82.22.05.63</p>
             </address>
             <div className="mt-6 flex space-x-4">
               <a 

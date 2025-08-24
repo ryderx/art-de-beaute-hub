@@ -42,7 +42,7 @@ const translations = {
     'about.story.paragraph3': 'Aujourd\'hui, nous sommes fiers d\'être reconnus comme un institut de beauté de premier plan, connu à la fois pour nos services exceptionnels et nos programmes éducatifs rigoureux qui lancent des carrières réussies dans l\'industrie de la beauté.',
     'about.mission.title': 'Notre Mission',
     'about.mission.description': 'Améliorer la confiance et l\'expression de soi grâce à des services de beauté d\'experts tout en permettant aux individus de construire des carrières réussies dans l\'industrie de la beauté.',
-    'about.whyChoose': 'Pourquoi Choisir Art de la Beautée?',
+    'about.whyChoose': 'Pourquoi Choisir Art de la Beauté?',
     'about.reasons.expertise.title': 'Expertise Certifiée',
     'about.reasons.expertise.description': 'Notre équipe de professionnels est formée et certifiée pour offrir à la fois des services de beauté et une éducation de haut niveau.',
     'about.reasons.quality.title': 'Engagement envers la Qualité',
@@ -230,7 +230,7 @@ const translations = {
     'hours.closed': 'Fermé',
     
     // Footer
-    'footer.description': 'Un institut de beauté distingué basé à Orléans, France, dédié à la prestation de services de beauté et d\'éducation professionnelle de premier ordre.',
+    'footer.description': 'Un institut de beauté distingué basé à Orléans, France, dédié à la prestation de services de beauté et d\'éducation professionnelle.',
     'footer.quickLinks': 'Liens Rapides',
     
     // General
