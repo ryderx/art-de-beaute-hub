@@ -17,7 +17,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-beauty-gold rounded-lg"></div>
               <img
-                src="https://images.unsplash.com/photo-1534126511673-b6899657816a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                src="/images/image_about1.png"
                 alt="Our Beauty Institute"
                 className="relative z-10 rounded-lg shadow-lg w-full h-auto"
               />
