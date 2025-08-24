@@ -1,7 +1,7 @@
 
 import React from "react";
 import ServiceCard from "../ui/ServiceCard";
-import { Scissors, GraduationCap, Sparkles, Eye } from "lucide-react";
+import { GraduationCap, Sparkles, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageContext";
 
@@ -22,12 +22,6 @@ const ServicesSection = () => {
       link: "/services#eyelash-extensions"
     },
     {
-      title: t('services.depilation.title'),
-      description: t('services.depilation.description'),
-      icon: <Scissors size={32} />,
-      link: "/services#depilation"
-    },
-    {
       title: t('services.training.title'),
       description: t('services.training.description'),
       icon: <GraduationCap size={32} />,
@@ -40,7 +34,7 @@ const ServicesSection = () => {
       <div className="beauty-container">
         <h2 className="section-title">{t('services.title')}</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
