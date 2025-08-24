@@ -1,7 +1,6 @@
-
 import React from "react";
 import Layout from "../components/layout/Layout";
-import { Sparkles, Eye } from "lucide-react";
+import { Sparkles, Eye, Scissors } from "lucide-react"; // <-- Added Scissors here
 import { useLanguage } from "../context/LanguageContext";
 
 const Services = () => {
@@ -71,7 +70,7 @@ const Services = () => {
       title: t('services.depilation.title'),
       description: t('services.depilation.description'),
       image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      icon: <Scissors size={32} />,
+      icon: <Scissors size={32} />, // <-- This now works
       treatments: [
         {
           name: t('services.treatments.depilation.eyebrow.name'),
