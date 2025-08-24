@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="font-playfair text-2xl font-bold text-beauty-darkpink mb-6">
-              Art de la <span className="text-beauty-gold">Beautée</span>
+              Art de la <span className="text-beauty-gold">Beauté</span>
             </h3>
             <p className="text-gray-600 mb-4">
               {t('footer.description')}
@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-beauty-pink pt-8 text-center text-gray-600">
-          <p>&copy; {currentYear} Art de la Beautée. All rights reserved.</p>
+          <p>&copy; {currentYear} Art de la Beauté. All rights reserved.</p>
         </div>
       </div>
     </footer>
