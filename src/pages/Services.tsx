@@ -66,6 +66,104 @@ const Services = () => {
         }
       ]
     },
+    
+
+import React from "react";
+import Layout from "../components/layout/Layout";
+import { Scissors, Sparkles, Eye } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
+
+const Services = () => {
+  const { t } = useLanguage();
+  
+  const services = [
+    {
+      id: "nail-services",
+      title: t('services.nail.title'),
+      description: t('services.nail.description'),
+      image: "https://images.unsplash.com/photo-1604902396830-aca29e19b067?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      icon: <Sparkles size={32} />,
+      treatments: [
+        {
+          name: t('services.treatments.nail.manicure.name'),
+          description: t('services.treatments.nail.manicure.description')
+        },
+        {
+          name: t('services.treatments.nail.pedicure.name'),
+          description: t('services.treatments.nail.pedicure.description')
+        },
+        {
+          name: t('services.treatments.nail.gel.name'),
+          description: t('services.treatments.nail.gel.description')
+        },
+        {
+          name: t('services.treatments.nail.extensions.name'),
+          description: t('services.treatments.nail.extensions.description')
+        },
+        {
+          name: t('services.treatments.nail.art.name'),
+          description: t('services.treatments.nail.art.description')
+        }
+      ]
+    },
+    {
+      id: "eyelash-extensions",
+      title: t('services.lashes.title'),
+      description: t('services.lashes.description'),
+      image: "https://images.unsplash.com/photo-1562625964-ffe11143e6fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      icon: <Eye size={32} />,
+      treatments: [
+        {
+          name: t('services.treatments.lashes.classic.name'),
+          description: t('services.treatments.lashes.classic.description')
+        },
+        {
+          name: t('services.treatments.lashes.volume.name'),
+          description: t('services.treatments.lashes.volume.description')
+        },
+        {
+          name: t('services.treatments.lashes.hybrid.name'),
+          description: t('services.treatments.lashes.hybrid.description')
+        },
+        {
+          name: t('services.treatments.lashes.lift.name'),
+          description: t('services.treatments.lashes.lift.description')
+        },
+        {
+          name: t('services.treatments.lashes.maintenance.name'),
+          description: t('services.treatments.lashes.maintenance.description')
+        }
+      ]
+    },
+    {
+      id: "depilation",
+      title: t('services.depilation.title'),
+      description: t('services.depilation.description'),
+      image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      icon: <Scissors size={32} />,
+      treatments: [
+        {
+          name: t('services.treatments.depilation.eyebrow.name'),
+          description: t('services.treatments.depilation.eyebrow.description')
+        },
+        {
+          name: t('services.treatments.depilation.facial.name'),
+          description: t('services.treatments.depilation.facial.description')
+        },
+        {
+          name: t('services.treatments.depilation.halfLeg.name'),
+          description: t('services.treatments.depilation.halfLeg.description')
+        },
+        {
+          name: t('services.treatments.depilation.fullLeg.name'),
+          description: t('services.treatments.depilation.fullLeg.description')
+        },
+        {
+          name: t('services.treatments.depilation.brazilian.name'),
+          description: t('services.treatments.depilation.brazilian.description')
+        }
+      ]
+    }
   ];
 
   return (
