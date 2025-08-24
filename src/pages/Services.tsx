@@ -41,7 +41,7 @@ const Services = () => {
       id: "eyelash-extensions",
       title: t('services.lashes.title'),
       description: t('services.lashes.description'),
-      image: "https://images.unsplash.com/photo-1562625964-ffe11143e6fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "/images/formation_cils.jpg",
       icon: <Eye size={32} />,
       treatments: [
         {
