@@ -66,7 +66,7 @@ const Gallery = () => {
       id: 10,
       image: "/images/nail1.jpg",
       category: "nail-art",
-      title: "Classroom Instruction"
+      title: "FLower Nail Art"
     },
     {
       id: 11,
