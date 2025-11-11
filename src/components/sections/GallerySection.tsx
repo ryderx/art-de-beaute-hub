@@ -19,9 +19,9 @@ const GallerySection = () => {
       title: t('gallery.items.lashes')
     },
     {
-      image: "/images/image8.jpg",
-      category: t('gallery.categories.training'),
-      title: t('gallery.items.certification')
+      image: "/images/team4.jpg",
+      category: t('gallery.categories.team'),
+      title: t('gallery.items.team')
     },
     {
       image: "/images/image4.png",
