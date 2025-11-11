@@ -36,25 +36,25 @@ const Gallery = () => {
       id: 5,
       image: "images/team1.jpg",
       category: "team",
-      title: "Natural Lash Extensions"
+      title: ""
     },
     {
       id: 6,
       image: "images/team2.jpg",
       category: "team",
-      title: "Dramatic Lash Look"
+      title: ""
     },
     {
       id: 7,
       image: "/images/team4.jpg",
       category: "team",
-      title: "Student Certification"
+      title: ""
     },
     {
       id: 8,
       image: "/images/team5.jpg",
       category: "team",
-      title: "Hands-on Training"
+      title: ""
     },
     {
       id: 9,
@@ -72,7 +72,7 @@ const Gallery = () => {
       id: 11,
       image: "/images/team3.jpg",
       category: "team",
-      title: "Classic Lash Set"
+      title: ""
     },
     {
       id: 12,
@@ -138,7 +138,7 @@ const Gallery = () => {
                     ? t('gallery.categories.nailArt')
                     : item.category === "eyelash" 
                     ? t('gallery.categories.eyelash')
-                    : t('gallery.categories.training')
+                    : t('gallery.categories.team')
                 }
                 title={item.title}
               />
