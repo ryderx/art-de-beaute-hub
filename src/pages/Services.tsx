@@ -11,7 +11,7 @@ const Services = () => {
       id: "nail-services",
       title: t('services.nail.title'),
       description: t('services.nail.description'),
-      image: "https://images.unsplash.com/photo-1604902396830-aca29e19b067?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "/images/team4.jpg",
       icon: <Sparkles size={32} />,
       treatments: [
         {
@@ -40,7 +40,7 @@ const Services = () => {
       id: "eyelash-extensions",
       title: t('services.lashes.title'),
       description: t('services.lashes.description'),
-      image: "/images/formation_cils.jpg",
+      image: "/images/volumee-lashes.jpg",
       icon: <Eye size={32} />,
       treatments: [
         {
