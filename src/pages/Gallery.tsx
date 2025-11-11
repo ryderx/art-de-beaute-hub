@@ -28,32 +28,32 @@ const Gallery = () => {
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1607779097040-28d8190595df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "images/volumee-lashes.jpg",
       category: "eyelash",
       title: "Volume Lashes"
     },
     {
       id: 5,
-      image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-      category: "eyelash",
+      image: "images/team1.jpg",
+      category: "team",
       title: "Natural Lash Extensions"
     },
     {
       id: 6,
-      image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-      category: "eyelash",
+      image: "images/team2.jpg",
+      category: "team",
       title: "Dramatic Lash Look"
     },
     {
       id: 7,
-      image: "/images/image8.jpg",
-      category: "training",
+      image: "/images/team4.jpg",
+      category: "team",
       title: "Student Certification"
     },
     {
       id: 8,
-      image: "/images/image9.jpg",
-      category: "training",
+      image: "/images/team5.jpg",
+      category: "team",
       title: "Hands-on Training"
     },
     {
@@ -64,14 +64,14 @@ const Gallery = () => {
     },
     {
       id: 10,
-      image: "/images/image7.jpg",
-      category: "training",
+      image: "/images/nail1.jpg",
+      category: "nail-art",
       title: "Classroom Instruction"
     },
     {
       id: 11,
-      image: "https://images.unsplash.com/photo-1647626941504-59965d502947?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-      category: "eyelash",
+      image: "/images/team3.jpg",
+      category: "team",
       title: "Classic Lash Set"
     },
     {
@@ -86,7 +86,7 @@ const Gallery = () => {
     { id: "all", name: t('gallery.filters.all') },
     { id: "nail-art", name: t('gallery.filters.nailArt') },
     { id: "eyelash", name: t('gallery.filters.eyelash') },
-    { id: "training", name: t('gallery.filters.training') },
+    { id: "team", name: t('gallery.filters.team') },
   ];
   
   const filteredItems = activeFilter === "all" 
