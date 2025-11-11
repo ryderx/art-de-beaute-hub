@@ -34,11 +34,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/academy" className="text-gray-600 hover:text-beauty-gold transition-colors">
-                  {t('nav.academy')}
-                </Link>
-              </li>
-              <li>
                 <Link to="/gallery" className="text-gray-600 hover:text-beauty-gold transition-colors">
                   {t('nav.gallery')}
                 </Link>
@@ -56,7 +51,6 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="text-gray-600">{t('services.nail.title')}</li>
               <li className="text-gray-600">{t('services.lashes.title')}</li>
-              <li className="text-gray-600">{t('services.training.title')}</li>
             </ul>
           </div>
 

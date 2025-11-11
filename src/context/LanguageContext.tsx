@@ -195,6 +195,7 @@ const translations = {
     'gallery.categories.eyelash': 'Extensions de Cils',
     'gallery.categories.training': 'Formation',
     'gallery.noItems': 'Aucun élément ne correspond à ce filtre.',
+    'gallery.viewAll': 'Voir la Galerie',
     
     // 404 Page
     'notFound.message': 'La page que vous recherchez n\'existe pas.',
@@ -428,6 +429,7 @@ const translations = {
     'gallery.categories.eyelash': 'Extensiones de Pestañas',
     'gallery.categories.training': 'Formación',
     'gallery.noItems': 'No hay elementos que coincidan con este filtro.',
+    'gallery.viewAll': 'Ver Galería',
     
     // 404 Page
     'notFound.message': 'La página que busca no existe.',
@@ -661,6 +663,7 @@ const translations = {
     'gallery.categories.eyelash': 'Eyelash Extensions',
     'gallery.categories.training': 'Training',
     'gallery.noItems': 'No items match this filter.',
+    'gallery.viewAll': 'View Gallery',
     
     // 404 Page
     'notFound.message': 'The page you are looking for does not exist.',
