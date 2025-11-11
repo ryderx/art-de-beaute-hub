@@ -53,9 +53,6 @@ const Navbar = () => {
     name: t('nav.services'),
     path: "/services"
   }, {
-    name: t('nav.academy'),
-    path: "/academy"
-  }, {
     name: t('nav.gallery'),
     path: "/gallery"
   }, {

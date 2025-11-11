@@ -1,7 +1,6 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext";
 
 const Hero = () => {
@@ -20,9 +19,6 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
             <Link to="/services" className="beauty-button">
               {t('hero.servicesButton')}
-            </Link>
-            <Link to="/academy" className="beauty-button-outline">
-              {t('hero.academyButton')} <ArrowRight size={18} className="ml-2" />
             </Link>
           </div>
         </div>
