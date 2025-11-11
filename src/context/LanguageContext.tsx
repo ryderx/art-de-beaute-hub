@@ -19,7 +19,7 @@ const translations = {
     'hero.title': 'Découvrez Art de la',
     'hero.beauty': 'Beauté',
     'hero.elegance': '',
-    'hero.description': 'Un institut de beauté raffiné, dédié à la prestation de services esthétiques et à la formation professionnelle à Orléans, France.',
+    'hero.description': 'Un institut de beauté raffiné, dédié à la prestation de services esthétiques à Orléans, France.',
     'hero.servicesButton': 'Nos Services',
     'hero.academyButton': 'Formation de Beauté',
     'hero.imageAlt': 'Professionnel de beauté au travail',
@@ -35,7 +35,7 @@ const translations = {
 
     // About Page
     'about.title': 'À propos de Art de la Beauté',
-    'about.subtitle': 'Un institut de beauté distingué, basé à Orléans (France), dédié à l\'offre de services esthétiques et de formation professionnelle',
+    'about.subtitle': 'Un institut de beauté distingué, basé à Orléans (France), dédié à l\'offre de services esthétiques',
     'about.story.title': 'Notre Histoire',
     'about.story.paragraph1': 'Art de la Beautée a été fondé en 2019 avec la vision de créer un espace où les services de beauté et l\'éducation professionnelle pourraient coexister, élevant la norme des soins de beauté en France.',
     'about.story.paragraph2': 'Ce qui a commencé comme un petit salon d\'ongles est devenu un institut de beauté complet offrant une large gamme de services et de programmes de certification professionnelle. Notre parcours a été guidé par un engagement envers l\'excellence, l\'innovation et l\'autonomisation des individus par la beauté.',
@@ -231,7 +231,7 @@ const translations = {
     'hours.closed': 'Fermé',
     
     // Footer
-    'footer.description': 'Un institut de beauté distingué basé à Orléans, France, dédié à la prestation de services de beauté et d\'éducation professionnelle.',
+    'footer.description': 'Un institut de beauté raffiné, dédié à la prestation de services esthétiques à Orléans, France.',
     'footer.quickLinks': 'Liens Rapides',
     
     // General
@@ -253,7 +253,7 @@ const translations = {
     'hero.title': 'Descubre el Arte de la',
     'hero.beauty': 'Belleza',
     'hero.elegance': '',
-    'hero.description': 'Un distinguido instituto de belleza dedicado a ofrecer servicios de belleza y educación profesional en Orléans, Francia',
+    'hero.description': 'Un instituto de belleza refinado, dedicado a la prestación de servicios estéticos en Orleans, Francia',
     'hero.servicesButton': 'Nuestros Servicios',
     'hero.academyButton': 'Formación de Belleza',
     'hero.imageAlt': 'Profesional de belleza trabajando',
@@ -269,7 +269,7 @@ const translations = {
     
     // About Page
     'about.title': 'Acerca de Art de la Beautée',
-    'about.subtitle': 'Un distinguido instituto de belleza con sede en Orléans, Francia, dedicado a ofrecer servicios de belleza y educación profesional de primer nivel.',
+    'about.subtitle': 'Un distinguido instituto de belleza con sede en Orleans, Francia, dedicado a ofrecer servicios estéticos.',
     'about.story.title': 'Nuestra Historia',
     'about.story.paragraph1': 'Art de la Beautée fue fundado en 2019 con la visión de crear un espacio donde los servicios de belleza y la educación profesional pudieran coexistir, elevando el estándar de cuidado de belleza en Francia.',
     'about.story.paragraph2': 'Lo que comenzó como un pequeño salón de uñas se ha convertido en un instituto de belleza integral que ofrece una amplia gama de servicios y programas de certificación profesional. Nuestro viaje ha estado guiado por un compromiso con la excelencia, la innovación y el empoderamiento de las personas a través de la belleza.',
@@ -465,7 +465,7 @@ const translations = {
     'hours.closed': 'Cerrado',
     
     // Footer
-    'footer.description': 'Un instituto de belleza distinguido con sede en Orléans, Francia, dedicado a ofrecer servicios de belleza y educación profesional de primer nivel.',
+    'footer.description': 'Un instituto de belleza refinado, dedicado a la prestación de servicios estéticos en Orleans, Francia.',
     'footer.quickLinks': 'Enlaces Rápidos',
     
     // General
@@ -487,7 +487,7 @@ const translations = {
     'hero.title': 'Discover the Art of',
     'hero.beauty': 'Beauty',
     'hero.elegance': 'Elegance',
-    'hero.description': 'A distinguished beauty institute dedicated to delivering top-tier beauty services and professional education in Orléans, France.',
+    'hero.description': 'A refined beauty institute dedicated to providing aesthetic services in Orleans, France.',
     'hero.servicesButton': 'Our Services',
     'hero.academyButton': 'Beauty Training',
     'hero.imageAlt': 'Beauty professional working',
@@ -503,7 +503,7 @@ const translations = {
     
     // About Page
     'about.title': 'About Art de la Beautée',
-    'about.subtitle': 'A distinguished beauty institute based in Orleans, France, dedicated to delivering top-tier beauty services and professional education.',
+    'about.subtitle': 'A distinguished beauty institute based in Orleans, France, dedicated to delivering aesthetic services.',
     'about.story.title': 'Our Story',
     'about.story.paragraph1': 'Art de la Beautée was founded in 2010 with a vision to create a space where beauty services and professional education could coexist, elevating the standard of beauty care in France.',
     'about.story.paragraph2': 'What began as a small nail salon has grown into a comprehensive beauty institute offering a wide range of services and professional certification programs. Our journey has been guided by a commitment to excellence, innovation, and empowering individuals through beauty.',
@@ -699,7 +699,7 @@ const translations = {
     'hours.closed': 'Closed',
     
     // Footer
-    'footer.description': 'A distinguished beauty institute based in Orleans, France, dedicated to delivering top-tier beauty services and professional education.',
+    'footer.description': 'A refined beauty institute, dedicated to providing aesthetic services in Orleans, France.',
     'footer.quickLinks': 'Quick Links',
     
     // General
