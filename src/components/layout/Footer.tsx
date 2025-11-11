@@ -58,19 +58,20 @@ const Footer = () => {
             <h4 className="font-playfair text-xl text-beauty-darkpink mb-6">{t('contact.title')}</h4>
             <address className="not-italic text-gray-600 space-y-3">
               <p>66 Rue Porte Saint-Jean, 45000 Orléans, France</p>
-              <p>Email: munozjulia1977@gmail.com</p>
+              <p>Email: artetcosmetique@gmail.com</p>
               <p>Telephone: 07.82.22.05.63</p>
+              <p>Telephone: 09.52.36.79.21</p>
             </address>
             <div className="mt-6 flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/profile.php?id=100050440226828" 
                 className="text-beauty-darkpink hover:text-beauty-gold transition-colors"
                 aria-label="Facebook"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/artdelabeautee?igsh=aGtqZnVjaGZncDEz" 
                 className="text-beauty-darkpink hover:text-beauty-gold transition-colors"
                 aria-label="Instagram"
               >
