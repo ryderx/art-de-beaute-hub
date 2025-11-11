@@ -51,6 +51,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-xl mb-2">{t('contact.phone')}</h3>
                     <p className="text-gray-600">07.82.22.05.63</p>
+                    <p className="text-gray-600">09.52.36.79.21</p>
                   </div>
                 </div>
                 
@@ -60,7 +61,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-xl mb-2">{t('contact.email')}</h3>
-                    <p className="text-gray-600">munozjulia1977@gmail.com</p>
+                    <p className="text-gray-600">artetcosmetique@gmail.com</p>
                   </div>
                 </div>
                 
