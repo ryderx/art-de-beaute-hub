@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "../components/layout/Layout";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { businessHours } from "../config/businessHours";
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -72,12 +73,15 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-xl mb-2">{t('contact.hours')}</h3>
                     <div className="text-gray-600">
-                      <p><strong>{t('hours.monday')}:</strong> {t('hours.timeRange')}</p>
-                      <p><strong>{t('hours.tuesday')}:</strong> {t('hours.timeRange')}</p>
-                      <p><strong>{t('hours.wednesday')}:</strong> {t('hours.timeRange')}</p>
-                      <p><strong>{t('hours.thursday')}:</strong> {t('hours.timeRange')}</p>
-                      <p><strong>{t('hours.friday')}:</strong> {t('hours.timeRange')}</p>
-                      <p><strong>{t('hours.saturday')}:</strong> {t('hours.timeRange')}</p>
+                      <p>
+                        <strong>
+                          {businessHours.days.map((day, index) => 
+                            index === 0 ? t(`hours.${day}`) : 
+                            index === businessHours.days.length - 1 ? ` - ${t(`hours.${day}`)}` :
+                            ''
+                          ).join('')}:
+                        </strong> {businessHours.hours}
+                      </p>
                       <p><strong>{t('hours.sunday')}:</strong> {t('hours.closed')}</p>
                     </div>
                   </div>

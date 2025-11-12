@@ -245,7 +245,7 @@ const translations = {
     'hours.time': 'Heures',
     'hours.days': 'Jours',
     'hours.day': 'Jour',
-    'hours.timeRange': '05:00 – 14:00'
+    'hours.timeRange': '10:00 – 19:00'
   },
   
   es: {
@@ -479,7 +479,7 @@ const translations = {
     'hours.time': 'Horas',
     'hours.days': 'Días',
     'hours.day': 'Día',
-    'hours.timeRange': '05:00 – 14:00'
+    'hours.timeRange': '10:00 – 19:00'
   },
   
   en: {
@@ -713,7 +713,7 @@ const translations = {
     'hours.time': 'Hours',
     'hours.days': 'Days',
     'hours.day': 'Day',
-    'hours.timeRange': '05:00 – 14:00'
+    'hours.timeRange': '10:00 – 19:00'
   }
 };
 
