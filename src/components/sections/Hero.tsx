@@ -28,7 +28,7 @@ const Hero = () => {
             <div className="bg-beauty-cream absolute -bottom-4 -right-4 w-48 h-48 md:w-64 md:h-64 rounded-full opacity-30"></div>
             <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/images/frontimage.jpg"
+                src="/images/hero.jpg"
                 alt={t('hero.imageAlt')}
                 className="w-full h-auto"
               />
